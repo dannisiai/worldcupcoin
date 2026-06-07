@@ -1023,12 +1023,12 @@
     </nav>
     <div class="actions"><button class="btn ghost" id="langBtn">EN</button><button class="btn ghost" id="walletBtn" data-i18n="connectWallet">连接钱包</button></div>
   </header>
-  <main id="top">
+  <main>
 
     <section class="countdown-hero shell" id="opening">
       <div class="countdown-glass">
         <p class="countdown-kicker" data-i18n="openingBattle">开幕战</p>
-        <h2 data-i18n="openingTeams">墨西哥 vs 南非 · 2026年6月11日</h2>
+        <h2 data-i18n="openingTeams">墨西哥 vs 南非 · 2026年6月12日 03:00 北京时间</h2>
         <div class="countdown countdown-large" id="countdown">
           <div><strong>00</strong><span data-i18n="days">天</span></div>
           <div><strong>00</strong><span data-i18n="hours">小时</span></div>
@@ -1069,7 +1069,7 @@
         </aside>
       </div>
     </section>
-    <section class="section shell" id="market"><div class="section-head"><div><p class="eyebrow" data-i18n="marketEyebrow">实时交易面板</p><h2 data-i18n="marketTitle">国家球队币 DEX 行情表</h2></div></div><div class="toolbar"><input id="searchInput" type="search" placeholder="搜索国家 / Symbol / Chain..."/><div class="sorts" id="sortTabs"><button data-sort="heat" class="active">热度</button><button data-sort="change24h">涨幅</button><button data-sort="volume">成交额</button><button data-sort="cap">市值</button></div></div><div class="card market-panel"><div class="market-scroll"><table class="market-table"><thead><tr><th class="col-rank" data-i18n="rank">#</th><th class="col-token" data-i18n="token">币种</th><th class="col-cap" data-i18n="marketCapCol">市值</th><th class="col-price" data-i18n="price">价格</th><th class="col-change" data-i18n="change">24h</th><th class="col-volume" data-i18n="volume">成交额</th><th class="col-liquidity" data-i18n="liquidity">流动性</th><th class="col-holders" data-i18n="holders">持币</th><th class="col-inflow"><span data-i18n="mainInflow">为WorldCupCoin主币输血金额</span></th><th class="col-ca">CA</th></tr></thead><tbody id="marketRows"></tbody></table></div></div></section>
+    <section class="section shell" id="market"><div class="section-head"><div><p class="eyebrow" data-i18n="marketEyebrow">实时交易面板</p><h2 data-i18n="marketTitle">国家球队币 DEX 行情表</h2></div></div><div class="toolbar"><input id="searchInput" type="search" placeholder="搜索国家 / Symbol / Chain..."/><div class="sorts" id="sortTabs"><button data-sort="heat">热度</button><button data-sort="change24h">涨幅</button><button data-sort="volume">成交额</button><button data-sort="cap" class="active">市值</button></div></div><div class="card market-panel"><div class="market-scroll"><table class="market-table"><thead><tr><th class="col-rank" data-i18n="rank">#</th><th class="col-token" data-i18n="token">币种</th><th class="col-cap" data-i18n="marketCapCol">市值</th><th class="col-price" data-i18n="price">价格</th><th class="col-change" data-i18n="change">24h</th><th class="col-volume" data-i18n="volume">成交额</th><th class="col-liquidity" data-i18n="liquidity">流动性</th><th class="col-holders" data-i18n="holders">持币</th><th class="col-inflow"><span data-i18n="mainInflow">为WorldCupCoin主币输血金额</span></th><th class="col-ca">CA</th></tr></thead><tbody id="marketRows"></tbody></table></div></div></section>
 
     <section class="section shell fixtures-restored" id="fixtures">
       <div class="section-head">
@@ -1089,8 +1089,8 @@
     <div class="footer-inner">
       <p data-i18n="footer">免责声明: 独立球迷项目。与 FIFA、任何国家足协、赛事组织方无任何关联。</p>
       <div class="footer-social" aria-label="Official social links">
-        <a class="social-link" data-social="x" href="https://x.com/your_project" target="_blank" rel="noreferrer" aria-label="X / Twitter"><span>𝕏</span><b>X</b></a>
-        <a class="social-link" data-social="telegram" href="https://t.me/your_project" target="_blank" rel="noreferrer" aria-label="Telegram"><span>TG</span><b>Telegram</b></a>
+      <a class="social-link" data-social="x" href="https://x.com/ETHWorldCupCoin" target="_blank" rel="noreferrer noopener" aria-label="X / Twitter"><span>𝕏</span><b>X</b></a>
+      <a class="social-link" data-social="telegram" href="https://t.me/ETHWorldCupCoin" target="_blank" rel="noreferrer noopener" aria-label="Telegram"><span>TG</span><b>Telegram</b></a>
       </div>
     </div>
   </footer>
@@ -1113,8 +1113,8 @@ window.WORLD_CUP_CONFIG = {
       etherscan: 'https://etherscan.io/',
       pump: 'https://pump.fun/',
       flap: 'https://flap.sh/',
-      x: 'https://x.com/your_project',
-      telegram: 'https://t.me/your_project',
+      x: 'https://x.com/ETHWorldCupCoin',
+      telegram: 'https://t.me/ETHWorldCupCoin',
       docs: '#'
     },
     stats: {
@@ -1139,18 +1139,1590 @@ window.WORLD_CUP_CONFIG = {
     }
   },
   tokens: [
-    { rank:1, country:{zh:'世界杯主币',en:'World Cup Hub'}, symbol:'WORLDETH', chain:'ETH', flag:'🏆', price:'$0.00888', change24h:30.01, cap:'$8.88M', volume:'$3.30M', liquidity:'$912.4K', holders:'33,200', heat:98, matchDay:true, trending:true, tax:'3%', contract:'0x7777777777777777777777777777777777777777', dex:'#', buy:'#', chart:[28,42,38,55,61,78,92] },
-    { rank:2, country:{zh:'西班牙',en:'Spain'}, symbol:'ESP', chain:'BSC', flag:'🇪🇸', price:'$0.000304', change24h:22.48, cap:'$304.2K', volume:'$182.6K', liquidity:'$44.1K', holders:'856', heat:91, matchDay:true, trending:true, tax:'5%', contract:'0xa69a0000000000000000000000000000001a7777', dex:'#', buy:'#', chart:[31,37,52,49,60,68,82] },
-    { rank:3, country:{zh:'法国',en:'France'}, symbol:'FRA', chain:'BSC', flag:'🇫🇷', price:'$0.000296', change24h:18.06, cap:'$296.2K', volume:'$158.1K', liquidity:'$39.8K', holders:'1,119', heat:88, matchDay:false, trending:true, tax:'5%', contract:'0x9da40000000000000000000000000000Fc7777', dex:'#', buy:'#', chart:[25,30,41,44,56,69,71] },
-    { rank:4, country:{zh:'英格兰',en:'England'}, symbol:'ENG', chain:'BSC', flag:'🏴', price:'$0.000145', change24h:-4.12, cap:'$144.9K', volume:'$78.4K', liquidity:'$21.8K', holders:'1,136', heat:79, matchDay:false, trending:false, tax:'5%', contract:'0x8d680000000000000000000000000000e27777', dex:'#', buy:'#', chart:[58,54,56,43,40,38,35] },
-    { rank:5, country:{zh:'葡萄牙',en:'Portugal'}, symbol:'POR', chain:'BSC', flag:'🇵🇹', price:'$0.000133', change24h:8.44, cap:'$132.9K', volume:'$65.9K', liquidity:'$18.2K', holders:'681', heat:76, matchDay:true, trending:true, tax:'5%', contract:'0x69ba0000000000000000000000000000fb7777', dex:'#', buy:'#', chart:[34,35,39,46,45,51,57] },
-    { rank:6, country:{zh:'阿根廷',en:'Argentina'}, symbol:'ARG', chain:'SOL', flag:'🇦🇷', price:'$0.000114', change24h:14.7, cap:'$113.9K', volume:'$112.4K', liquidity:'$32.0K', holders:'1,045', heat:86, matchDay:true, trending:true, tax:'LP', contract:'ARG111111111111111111111111111111111pump', dex:'#', buy:'#', chart:[22,29,33,49,52,58,70] },
-    { rank:7, country:{zh:'巴西',en:'Brazil'}, symbol:'BRA', chain:'SOL', flag:'🇧🇷', price:'$0.0000866', change24h:10.33, cap:'$86.6K', volume:'$88.6K', liquidity:'$25.7K', holders:'1,026', heat:82, matchDay:true, trending:false, tax:'LP', contract:'BRA111111111111111111111111111111111pump', dex:'#', buy:'#', chart:[40,44,42,48,55,59,61] },
-    { rank:8, country:{zh:'荷兰',en:'Netherlands'}, symbol:'NED', chain:'ETH', flag:'🇳🇱', price:'$0.0000693', change24h:-2.14, cap:'$69.3K', volume:'$39.2K', liquidity:'$11.5K', holders:'703', heat:65, matchDay:false, trending:false, tax:'3%', contract:'0x1733000000000000000000000000000000337777', dex:'#', buy:'#', chart:[52,49,48,42,39,37,36] },
-    { rank:9, country:{zh:'德国',en:'Germany'}, symbol:'GER', chain:'ETH', flag:'🇩🇪', price:'$0.0000677', change24h:6.92, cap:'$67.7K', volume:'$42.9K', liquidity:'$10.9K', holders:'664', heat:62, matchDay:false, trending:false, tax:'3%', contract:'0x4ad0000000000000000000000000000000817777', dex:'#', buy:'#', chart:[36,35,41,44,46,47,50] },
-    { rank:10, country:{zh:'日本',en:'Japan'}, symbol:'JPN', chain:'BSC', flag:'🇯🇵', price:'$0.0000282', change24h:3.21, cap:'$28.2K', volume:'$14.8K', liquidity:'$6.4K', holders:'264', heat:54, matchDay:false, trending:false, tax:'5%', contract:'0xb101000000000000000000000000000000a17777', dex:'#', buy:'#', chart:[25,26,27,29,31,30,32] },
-    { rank:11, country:{zh:'美国',en:'USA'}, symbol:'USA', chain:'ETH', flag:'🇺🇸', price:'$0.0000252', change24h:19.5, cap:'$25.2K', volume:'$31.4K', liquidity:'$8.8K', holders:'341', heat:72, matchDay:true, trending:true, tax:'3%', contract:'0x24b7000000000000000000000000000000297777', dex:'#', buy:'#', chart:[18,21,24,33,42,46,55] },
-    { rank:12, country:{zh:'摩洛哥',en:'Morocco'}, symbol:'MAR', chain:'SOL', flag:'🇲🇦', price:'$0.0000254', change24h:-6.18, cap:'$15.3K', volume:'$8.6K', liquidity:'$3.2K', holders:'107', heat:41, matchDay:false, trending:false, tax:'LP', contract:'MAR111111111111111111111111111111111pump', dex:'#', buy:'#', chart:[40,37,35,30,28,26,22] }
+      {
+          "rank": 1,
+          "country": {
+              "zh": "西班牙",
+              "en": "Spain"
+          },
+          "symbol": "ESP",
+          "chain": "BSC",
+          "group": "H",
+          "flagUrl": "https://flagcdn.com/w80/es.png",
+          "price": "$0.000304",
+          "change24h": 22.48,
+          "cap": "$304.2K",
+          "volume": "$139.9K",
+          "liquidity": "$41.1K",
+          "holders": "2,553",
+          "heat": 98,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x99851882f0e10fabfec37ba80d620471f7a10d10",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              34,
+              38,
+              44,
+              48,
+              54,
+              60
+          ]
+      },
+      {
+          "rank": 2,
+          "country": {
+              "zh": "法国",
+              "en": "France"
+          },
+          "symbol": "FRA",
+          "chain": "ETH",
+          "group": "I",
+          "flagUrl": "https://flagcdn.com/w80/fr.png",
+          "price": "$0.000296",
+          "change24h": 18.06,
+          "cap": "$296.2K",
+          "volume": "$146.6K",
+          "liquidity": "$43.5K",
+          "holders": "2,559",
+          "heat": 97,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x7aa20d849f6413db4370fe49e5d1976f3c9cb14f",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              35,
+              39,
+              45,
+              49,
+              55,
+              61
+          ]
+      },
+      {
+          "rank": 3,
+          "country": {
+              "zh": "阿根廷",
+              "en": "Argentina"
+          },
+          "symbol": "ARG",
+          "chain": "BSC",
+          "group": "J",
+          "flagUrl": "https://flagcdn.com/w80/ar.png",
+          "price": "$0.000281",
+          "change24h": 14.7,
+          "cap": "$280.8K",
+          "volume": "$148.8K",
+          "liquidity": "$44.6K",
+          "holders": "2,565",
+          "heat": 96,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x3421947e05924df8f770d328478e15c0160b96a0",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              36,
+              40,
+              46,
+              50,
+              56,
+              62
+          ]
+      },
+      {
+          "rank": 4,
+          "country": {
+              "zh": "英格兰",
+              "en": "England"
+          },
+          "symbol": "ENG",
+          "chain": "BSC",
+          "group": "L",
+          "flagUrl": "https://flagcdn.com/w80/gb-eng.png",
+          "price": "$0.000260",
+          "change24h": -4.12,
+          "cap": "$260.4K",
+          "volume": "$147.1K",
+          "liquidity": "$44.5K",
+          "holders": "2,571",
+          "heat": 95,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x7ad5335daa82c70f4a0ed9496e075f683e474912",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              37,
+              41,
+              47,
+              51,
+              57,
+              63
+          ]
+      },
+      {
+          "rank": 5,
+          "country": {
+              "zh": "巴西",
+              "en": "Brazil"
+          },
+          "symbol": "BRA",
+          "chain": "SOL",
+          "group": "C",
+          "flagUrl": "https://flagcdn.com/w80/br.png",
+          "price": "$0.000245",
+          "change24h": 10.33,
+          "cap": "$244.6K",
+          "volume": "$146.8K",
+          "liquidity": "$44.8K",
+          "holders": "2,577",
+          "heat": 98,
+          "matchDay": true,
+          "trending": true,
+          "tax": "LP",
+          "contract": "BRA111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              38,
+              42,
+              48,
+              52,
+              58,
+              64
+          ]
+      },
+      {
+          "rank": 6,
+          "country": {
+              "zh": "葡萄牙",
+              "en": "Portugal"
+          },
+          "symbol": "POR",
+          "chain": "ETH",
+          "group": "K",
+          "flagUrl": "https://flagcdn.com/w80/pt.png",
+          "price": "$0.000234",
+          "change24h": 8.44,
+          "cap": "$233.8K",
+          "volume": "$148.5K",
+          "liquidity": "$31.6K",
+          "holders": "2,583",
+          "heat": 93,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x01dd329e40304e1b3b2df89a27a84b81e7d90e0f",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              39,
+              43,
+              49,
+              53,
+              59,
+              65
+          ]
+      },
+      {
+          "rank": 7,
+          "country": {
+              "zh": "德国",
+              "en": "Germany"
+          },
+          "symbol": "GER",
+          "chain": "BSC",
+          "group": "E",
+          "flagUrl": "https://flagcdn.com/w80/de.png",
+          "price": "$0.000221",
+          "change24h": 7.86,
+          "cap": "$221.5K",
+          "volume": "$148.4K",
+          "liquidity": "$32.6K",
+          "holders": "2,331",
+          "heat": 92,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xa8550e29a4abf999afadba1cc721474505058003",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              40,
+              44,
+              50,
+              54,
+              60,
+              66
+          ]
+      },
+      {
+          "rank": 8,
+          "country": {
+              "zh": "美国",
+              "en": "USA"
+          },
+          "symbol": "USA",
+          "chain": "ETH",
+          "group": "D",
+          "flagUrl": "https://flagcdn.com/w80/us.png",
+          "price": "$0.000209",
+          "change24h": 13.28,
+          "cap": "$208.7K",
+          "volume": "$96.0K",
+          "liquidity": "$33.2K",
+          "holders": "2,337",
+          "heat": 95,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xe64b777c46702c1622a62024737955f6b8e990d1",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              41,
+              45,
+              51,
+              55,
+              61,
+              67
+          ]
+      },
+      {
+          "rank": 9,
+          "country": {
+              "zh": "加拿大",
+              "en": "Canada"
+          },
+          "symbol": "CAN",
+          "chain": "BSC",
+          "group": "B",
+          "flagUrl": "https://flagcdn.com/w80/ca.png",
+          "price": "$0.000190",
+          "change24h": 6.75,
+          "cap": "$190.4K",
+          "volume": "$94.2K",
+          "liquidity": "$32.6K",
+          "holders": "2,343",
+          "heat": 94,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x09ee8bf746373882d628f7460660435a5105f9fa",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              34,
+              46,
+              52,
+              56,
+              62,
+              68
+          ]
+      },
+      {
+          "rank": 10,
+          "country": {
+              "zh": "荷兰",
+              "en": "Netherlands"
+          },
+          "symbol": "NED",
+          "chain": "ETH",
+          "group": "F",
+          "flagUrl": "https://flagcdn.com/w80/nl.png",
+          "price": "$0.000176",
+          "change24h": -2.14,
+          "cap": "$176.2K",
+          "volume": "$93.4K",
+          "liquidity": "$32.2K",
+          "holders": "2,349",
+          "heat": 89,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xe97361dafa5aadcdd246f95d7484b6414802b45f",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              35,
+              47,
+              53,
+              48,
+              63,
+              69
+          ]
+      },
+      {
+          "rank": 11,
+          "country": {
+              "zh": "比利时",
+              "en": "Belgium"
+          },
+          "symbol": "BEL",
+          "chain": "BSC",
+          "group": "G",
+          "flagUrl": "https://flagcdn.com/w80/be.png",
+          "price": "$0.000169",
+          "change24h": 5.94,
+          "cap": "$168.8K",
+          "volume": "$95.4K",
+          "liquidity": "$22.8K",
+          "holders": "2,355",
+          "heat": 88,
+          "matchDay": false,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x552f6f0c84d0a5a71e92679e4eab923acfd78638",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              36,
+              38,
+              54,
+              49,
+              64,
+              70
+          ]
+      },
+      {
+          "rank": 12,
+          "country": {
+              "zh": "乌拉圭",
+              "en": "Uruguay"
+          },
+          "symbol": "URU",
+          "chain": "SOL",
+          "group": "H",
+          "flagUrl": "https://flagcdn.com/w80/uy.png",
+          "price": "$0.000155",
+          "change24h": 4.82,
+          "cap": "$154.9K",
+          "volume": "$92.9K",
+          "liquidity": "$22.8K",
+          "holders": "2,361",
+          "heat": 87,
+          "matchDay": false,
+          "trending": true,
+          "tax": "LP",
+          "contract": "URU111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              37,
+              39,
+              55,
+              50,
+              54,
+              71
+          ]
+      },
+      {
+          "rank": 13,
+          "country": {
+              "zh": "墨西哥",
+              "en": "Mexico"
+          },
+          "symbol": "MEX",
+          "chain": "BSC",
+          "group": "A",
+          "flagUrl": "https://flagcdn.com/w80/mx.png",
+          "price": "$0.000148",
+          "change24h": 16.4,
+          "cap": "$148.4K",
+          "volume": "$94.2K",
+          "liquidity": "$23.6K",
+          "holders": "2,109",
+          "heat": 90,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x61d28d78b79358e3a1546f0e40b04b2985a0bef1",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              38,
+              40,
+              44,
+              51,
+              55,
+              72
+          ]
+      },
+      {
+          "rank": 14,
+          "country": {
+              "zh": "克罗地亚",
+              "en": "Croatia"
+          },
+          "symbol": "CRO",
+          "chain": "ETH",
+          "group": "L",
+          "flagUrl": "https://flagcdn.com/w80/hr.png",
+          "price": "$0.000140",
+          "change24h": 3.78,
+          "cap": "$139.8K",
+          "volume": "$93.7K",
+          "liquidity": "$23.9K",
+          "holders": "2,115",
+          "heat": 85,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x3f5f12b765e43717ff83e73742b3b190b7b90e4a",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              39,
+              41,
+              45,
+              52,
+              56,
+              60
+          ]
+      },
+      {
+          "rank": 15,
+          "country": {
+              "zh": "摩洛哥",
+              "en": "Morocco"
+          },
+          "symbol": "MAR",
+          "chain": "BSC",
+          "group": "C",
+          "flagUrl": "https://flagcdn.com/w80/ma.png",
+          "price": "$0.000132",
+          "change24h": 9.15,
+          "cap": "$132.5K",
+          "volume": "$61.0K",
+          "liquidity": "$24.2K",
+          "holders": "2,121",
+          "heat": 88,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xd11c3d55a1e9f6f54e7851b594a3901189e9e4a0",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              40,
+              42,
+              46,
+              53,
+              57,
+              61
+          ]
+      },
+      {
+          "rank": 16,
+          "country": {
+              "zh": "瑞士",
+              "en": "Switzerland"
+          },
+          "symbol": "SUI",
+          "chain": "BSC",
+          "group": "B",
+          "flagUrl": "https://flagcdn.com/w80/ch.png",
+          "price": "$0.000125",
+          "change24h": 2.62,
+          "cap": "$124.6K",
+          "volume": "$61.7K",
+          "liquidity": "$16.8K",
+          "holders": "2,127",
+          "heat": 87,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xd168e25469b2c051165d655d68b9d0562e8d01a0",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              41,
+              43,
+              47,
+              54,
+              58,
+              62
+          ]
+      },
+      {
+          "rank": 17,
+          "country": {
+              "zh": "日本",
+              "en": "Japan"
+          },
+          "symbol": "JPN",
+          "chain": "SOL",
+          "group": "F",
+          "flagUrl": "https://flagcdn.com/w80/jp.png",
+          "price": "$0.000118",
+          "change24h": 11.6,
+          "cap": "$118.3K",
+          "volume": "$62.7K",
+          "liquidity": "$17.4K",
+          "holders": "2,133",
+          "heat": 82,
+          "matchDay": false,
+          "trending": false,
+          "tax": "LP",
+          "contract": "JPN111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              34,
+              44,
+              48,
+              55,
+              59,
+              63
+          ]
+      },
+      {
+          "rank": 18,
+          "country": {
+              "zh": "哥伦比亚",
+              "en": "Colombia"
+          },
+          "symbol": "COL",
+          "chain": "ETH",
+          "group": "K",
+          "flagUrl": "https://flagcdn.com/w80/co.png",
+          "price": "$0.000113",
+          "change24h": 5.31,
+          "cap": "$112.9K",
+          "volume": "$63.8K",
+          "liquidity": "$18.0K",
+          "holders": "2,139",
+          "heat": 81,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xb78de90911a3ececbeae17febdc73a2be8dd9ce0",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              35,
+              45,
+              49,
+              56,
+              60,
+              64
+          ]
+      },
+      {
+          "rank": 19,
+          "country": {
+              "zh": "挪威",
+              "en": "Norway"
+          },
+          "symbol": "NOR",
+          "chain": "BSC",
+          "group": "I",
+          "flagUrl": "https://flagcdn.com/w80/no.png",
+          "price": "$0.000105",
+          "change24h": 6.08,
+          "cap": "$104.7K",
+          "volume": "$62.8K",
+          "liquidity": "$17.9K",
+          "holders": "1,887",
+          "heat": 80,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x0778f953330a37f1ef7386ddaaeab6b79dbdcfa8",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              36,
+              46,
+              50,
+              48,
+              61,
+              65
+          ]
+      },
+      {
+          "rank": 20,
+          "country": {
+              "zh": "瑞典",
+              "en": "Sweden"
+          },
+          "symbol": "SWE",
+          "chain": "ETH",
+          "group": "F",
+          "flagUrl": "https://flagcdn.com/w80/se.png",
+          "price": "$0.0000984",
+          "change24h": 1.92,
+          "cap": "$98.4K",
+          "volume": "$62.5K",
+          "liquidity": "$18.0K",
+          "holders": "1,893",
+          "heat": 79,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xa12351e78f08f83aa872491bc195bb111b0de516",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              37,
+              47,
+              51,
+              49,
+              62,
+              66
+          ]
+      },
+      {
+          "rank": 21,
+          "country": {
+              "zh": "塞内加尔",
+              "en": "Senegal"
+          },
+          "symbol": "SEN",
+          "chain": "BSC",
+          "group": "I",
+          "flagUrl": "https://flagcdn.com/w80/sn.png",
+          "price": "$0.0000917",
+          "change24h": 7.45,
+          "cap": "$91.7K",
+          "volume": "$61.4K",
+          "liquidity": "$12.4K",
+          "holders": "1,899",
+          "heat": 78,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x51d6e5cb672fbcecd76dd052a900a42c708e2105",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              38,
+              38,
+              52,
+              50,
+              63,
+              67
+          ]
+      },
+      {
+          "rank": 22,
+          "country": {
+              "zh": "科特迪瓦",
+              "en": "Côte d'Ivoire"
+          },
+          "symbol": "CIV",
+          "chain": "ETH",
+          "group": "E",
+          "flagUrl": "https://flagcdn.com/w80/ci.png",
+          "price": "$0.0000869",
+          "change24h": 4.18,
+          "cap": "$86.9K",
+          "volume": "$40.0K",
+          "liquidity": "$12.8K",
+          "holders": "1,905",
+          "heat": 77,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x39dd9b88b412116f951e0cabb9301a017f38e2ab",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              39,
+              39,
+              53,
+              51,
+              64,
+              68
+          ]
+      },
+      {
+          "rank": 23,
+          "country": {
+              "zh": "土耳其",
+              "en": "Türkiye"
+          },
+          "symbol": "TUR",
+          "chain": "BSC",
+          "group": "D",
+          "flagUrl": "https://flagcdn.com/w80/tr.png",
+          "price": "$0.0000822",
+          "change24h": 3.61,
+          "cap": "$82.2K",
+          "volume": "$40.7K",
+          "liquidity": "$13.1K",
+          "holders": "1,911",
+          "heat": 76,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xf92d8ca893dcc646845186780388ecfa38380f55",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              40,
+              40,
+              54,
+              52,
+              54,
+              69
+          ]
+      },
+      {
+          "rank": 24,
+          "country": {
+              "zh": "厄瓜多尔",
+              "en": "Ecuador"
+          },
+          "symbol": "ECU",
+          "chain": "SOL",
+          "group": "E",
+          "flagUrl": "https://flagcdn.com/w80/ec.png",
+          "price": "$0.0000776",
+          "change24h": 2.84,
+          "cap": "$77.6K",
+          "volume": "$41.1K",
+          "liquidity": "$13.3K",
+          "holders": "1,917",
+          "heat": 75,
+          "matchDay": false,
+          "trending": false,
+          "tax": "LP",
+          "contract": "ECU111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              41,
+              41,
+              55,
+              53,
+              55,
+              70
+          ]
+      },
+      {
+          "rank": 25,
+          "country": {
+              "zh": "伊朗",
+              "en": "IR Iran"
+          },
+          "symbol": "IRN",
+          "chain": "BSC",
+          "group": "G",
+          "flagUrl": "https://flagcdn.com/w80/ir.png",
+          "price": "$0.0000748",
+          "change24h": 5.52,
+          "cap": "$74.8K",
+          "volume": "$42.3K",
+          "liquidity": "$13.7K",
+          "holders": "1,665",
+          "heat": 74,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xdd0875f565b8c97b2f00fdd2de82be4038ddac49",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              34,
+              42,
+              44,
+              54,
+              56,
+              71
+          ]
+      },
+      {
+          "rank": 26,
+          "country": {
+              "zh": "苏格兰",
+              "en": "Scotland"
+          },
+          "symbol": "SCO",
+          "chain": "ETH",
+          "group": "C",
+          "flagUrl": "https://flagcdn.com/w80/gb-sct.png",
+          "price": "$0.0000723",
+          "change24h": -1.36,
+          "cap": "$72.3K",
+          "volume": "$43.4K",
+          "liquidity": "$9.8K",
+          "holders": "1,671",
+          "heat": 73,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x0548b425098cc0c678de1826ca3b06c2638b9df7",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              35,
+              43,
+              45,
+              55,
+              57,
+              72
+          ]
+      },
+      {
+          "rank": 27,
+          "country": {
+              "zh": "加纳",
+              "en": "Ghana"
+          },
+          "symbol": "GHA",
+          "chain": "BSC",
+          "group": "L",
+          "flagUrl": "https://flagcdn.com/w80/gh.png",
+          "price": "$0.0000684",
+          "change24h": 4.96,
+          "cap": "$68.4K",
+          "volume": "$43.4K",
+          "liquidity": "$10.1K",
+          "holders": "1,677",
+          "heat": 72,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x285a2a7ef704d95cc12203f958e0cd5128e74f6f",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              36,
+              44,
+              46,
+              56,
+              58,
+              60
+          ]
+      },
+      {
+          "rank": 28,
+          "country": {
+              "zh": "埃及",
+              "en": "Egypt"
+          },
+          "symbol": "EGY",
+          "chain": "BSC",
+          "group": "G",
+          "flagUrl": "https://flagcdn.com/w80/eg.png",
+          "price": "$0.0000648",
+          "change24h": 8.72,
+          "cap": "$64.8K",
+          "volume": "$43.4K",
+          "liquidity": "$10.3K",
+          "holders": "1,683",
+          "heat": 71,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xca28f3ac96714d9ec60eef3706fca776b50a052b",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              37,
+              45,
+              47,
+              48,
+              59,
+              61
+          ]
+      },
+      {
+          "rank": 29,
+          "country": {
+              "zh": "澳大利亚",
+              "en": "Australia"
+          },
+          "symbol": "AUS",
+          "chain": "SOL",
+          "group": "D",
+          "flagUrl": "https://flagcdn.com/w80/au.png",
+          "price": "$0.0000605",
+          "change24h": 2.14,
+          "cap": "$60.5K",
+          "volume": "$27.8K",
+          "liquidity": "$10.3K",
+          "holders": "1,689",
+          "heat": 70,
+          "matchDay": false,
+          "trending": false,
+          "tax": "LP",
+          "contract": "AUS111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              38,
+              46,
+              48,
+              49,
+              60,
+              62
+          ]
+      },
+      {
+          "rank": 30,
+          "country": {
+              "zh": "南非",
+              "en": "South Africa"
+          },
+          "symbol": "RSA",
+          "chain": "ETH",
+          "group": "A",
+          "flagUrl": "https://flagcdn.com/w80/za.png",
+          "price": "$0.0000561",
+          "change24h": 12.88,
+          "cap": "$56.1K",
+          "volume": "$27.8K",
+          "liquidity": "$10.3K",
+          "holders": "1,695",
+          "heat": 73,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x6081162d0317379cb7acab3f32ed44ea51e92a8e",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              39,
+              47,
+              49,
+              50,
+              61,
+              63
+          ]
+      },
+      {
+          "rank": 31,
+          "country": {
+              "zh": "巴拉圭",
+              "en": "Paraguay"
+          },
+          "symbol": "PAR",
+          "chain": "BSC",
+          "group": "D",
+          "flagUrl": "https://flagcdn.com/w80/py.png",
+          "price": "$0.0000528",
+          "change24h": 1.75,
+          "cap": "$52.8K",
+          "volume": "$28.0K",
+          "liquidity": "$7.1K",
+          "holders": "1,443",
+          "heat": 72,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xc4b227f2357534dfd354be7e8a2ddba5d82f2e9b",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              40,
+              38,
+              50,
+              51,
+              62,
+              64
+          ]
+      },
+      {
+          "rank": 32,
+          "country": {
+              "zh": "阿尔及利亚",
+              "en": "Algeria"
+          },
+          "symbol": "ALG",
+          "chain": "ETH",
+          "group": "J",
+          "flagUrl": "https://flagcdn.com/w80/dz.png",
+          "price": "$0.0000496",
+          "change24h": 3.24,
+          "cap": "$49.6K",
+          "volume": "$28.0K",
+          "liquidity": "$7.3K",
+          "holders": "1,449",
+          "heat": 67,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x8df0288c2b48668bf4274303a11b8d2c61fe1e3a",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              41,
+              39,
+              51,
+              52,
+              63,
+              65
+          ]
+      },
+      {
+          "rank": 33,
+          "country": {
+              "zh": "卡塔尔",
+              "en": "Qatar"
+          },
+          "symbol": "QAT",
+          "chain": "BSC",
+          "group": "B",
+          "flagUrl": "https://flagcdn.com/w80/qa.png",
+          "price": "$0.0000462",
+          "change24h": 0.96,
+          "cap": "$46.2K",
+          "volume": "$27.7K",
+          "liquidity": "$7.3K",
+          "holders": "1,455",
+          "heat": 70,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0xa284d4715b85a2bafa25fcc28cc8f000bd41c57c",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              34,
+              40,
+              52,
+              53,
+              64,
+              66
+          ]
+      },
+      {
+          "rank": 34,
+          "country": {
+              "zh": "沙特阿拉伯",
+              "en": "Saudi Arabia"
+          },
+          "symbol": "KSA",
+          "chain": "ETH",
+          "group": "H",
+          "flagUrl": "https://flagcdn.com/w80/sa.png",
+          "price": "$0.0000437",
+          "change24h": 2.51,
+          "cap": "$43.7K",
+          "volume": "$27.7K",
+          "liquidity": "$7.5K",
+          "holders": "1,461",
+          "heat": 65,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xec6566aff83967e47d78331f803c08b73bfcc9f3",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              35,
+              41,
+              53,
+              54,
+              54,
+              67
+          ]
+      },
+      {
+          "rank": 35,
+          "country": {
+              "zh": "韩国",
+              "en": "Korea Republic"
+          },
+          "symbol": "KOR",
+          "chain": "BSC",
+          "group": "A",
+          "flagUrl": "https://flagcdn.com/w80/kr.png",
+          "price": "$0.0000419",
+          "change24h": 10.06,
+          "cap": "$41.9K",
+          "volume": "$28.1K",
+          "liquidity": "$7.7K",
+          "holders": "1,467",
+          "heat": 68,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x2ce2d733d9043522d9987014ba5dc1be0b9588d6",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              36,
+              42,
+              54,
+              55,
+              55,
+              68
+          ]
+      },
+      {
+          "rank": 36,
+          "country": {
+              "zh": "奥地利",
+              "en": "Austria"
+          },
+          "symbol": "AUT",
+          "chain": "SOL",
+          "group": "J",
+          "flagUrl": "https://flagcdn.com/w80/at.png",
+          "price": "$0.0000394",
+          "change24h": -0.84,
+          "cap": "$39.4K",
+          "volume": "$18.1K",
+          "liquidity": "$5.3K",
+          "holders": "1,473",
+          "heat": 63,
+          "matchDay": false,
+          "trending": false,
+          "tax": "LP",
+          "contract": "AUT111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              37,
+              43,
+              55,
+              56,
+              56,
+              69
+          ]
+      },
+      {
+          "rank": 37,
+          "country": {
+              "zh": "捷克",
+              "en": "Czechia"
+          },
+          "symbol": "CZE",
+          "chain": "BSC",
+          "group": "A",
+          "flagUrl": "https://flagcdn.com/w80/cz.png",
+          "price": "$0.0000368",
+          "change24h": 6.42,
+          "cap": "$36.8K",
+          "volume": "$18.2K",
+          "liquidity": "$5.4K",
+          "holders": "1,221",
+          "heat": 66,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x9072be20cc300c31221ef02d00eebfb8c0cf74d3",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              38,
+              44,
+              44,
+              48,
+              57,
+              70
+          ]
+      },
+      {
+          "rank": 38,
+          "country": {
+              "zh": "突尼斯",
+              "en": "Tunisia"
+          },
+          "symbol": "TUN",
+          "chain": "ETH",
+          "group": "F",
+          "flagUrl": "https://flagcdn.com/w80/tn.png",
+          "price": "$0.0000345",
+          "change24h": 1.38,
+          "cap": "$34.5K",
+          "volume": "$18.3K",
+          "liquidity": "$5.5K",
+          "holders": "1,227",
+          "heat": 61,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x9aa19a4d186957d39f8e13b5185dfa5651ca817e",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              39,
+              45,
+              45,
+              49,
+              58,
+              71
+          ]
+      },
+      {
+          "rank": 39,
+          "country": {
+              "zh": "新西兰",
+              "en": "New Zealand"
+          },
+          "symbol": "NZL",
+          "chain": "BSC",
+          "group": "G",
+          "flagUrl": "https://flagcdn.com/w80/nz.png",
+          "price": "$0.0000324",
+          "change24h": 3.12,
+          "cap": "$32.4K",
+          "volume": "$18.3K",
+          "liquidity": "$5.5K",
+          "holders": "1,233",
+          "heat": 60,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xf154ba63c0a86c17b882d5206fb1b9e22c489386",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              40,
+              46,
+              46,
+              50,
+              59,
+              72
+          ]
+      },
+      {
+          "rank": 40,
+          "country": {
+              "zh": "波黑",
+              "en": "Bosnia and Herzegovina"
+          },
+          "symbol": "BIH",
+          "chain": "BSC",
+          "group": "B",
+          "flagUrl": "https://flagcdn.com/w80/ba.png",
+          "price": "$0.0000302",
+          "change24h": 7.04,
+          "cap": "$30.2K",
+          "volume": "$18.1K",
+          "liquidity": "$5.5K",
+          "holders": "1,239",
+          "heat": 63,
+          "matchDay": true,
+          "trending": true,
+          "tax": "5%",
+          "contract": "0x760279942e65ed6836d3c9510a89fe67aebd35fa",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              41,
+              47,
+              47,
+              51,
+              60,
+              60
+          ]
+      },
+      {
+          "rank": 41,
+          "country": {
+              "zh": "巴拿马",
+              "en": "Panama"
+          },
+          "symbol": "PAN",
+          "chain": "SOL",
+          "group": "L",
+          "flagUrl": "https://flagcdn.com/w80/pa.png",
+          "price": "$0.0000281",
+          "change24h": 2.06,
+          "cap": "$28.1K",
+          "volume": "$17.8K",
+          "liquidity": "$3.8K",
+          "holders": "1,245",
+          "heat": 58,
+          "matchDay": false,
+          "trending": false,
+          "tax": "LP",
+          "contract": "PAN111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              34,
+              38,
+              48,
+              52,
+              61,
+              61
+          ]
+      },
+      {
+          "rank": 42,
+          "country": {
+              "zh": "乌兹别克斯坦",
+              "en": "Uzbekistan"
+          },
+          "symbol": "UZB",
+          "chain": "ETH",
+          "group": "K",
+          "flagUrl": "https://flagcdn.com/w80/uz.png",
+          "price": "$0.0000268",
+          "change24h": 4.45,
+          "cap": "$26.8K",
+          "volume": "$18.0K",
+          "liquidity": "$3.9K",
+          "holders": "1,251",
+          "heat": 57,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x3764fd97721ae34d25f31ad98eeb31d3f86fc2e8",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              35,
+              39,
+              49,
+              53,
+              62,
+              62
+          ]
+      },
+      {
+          "rank": 43,
+          "country": {
+              "zh": "伊拉克",
+              "en": "Iraq"
+          },
+          "symbol": "IRQ",
+          "chain": "BSC",
+          "group": "I",
+          "flagUrl": "https://flagcdn.com/w80/iq.png",
+          "price": "$0.0000247",
+          "change24h": 1.12,
+          "cap": "$24.7K",
+          "volume": "$11.4K",
+          "liquidity": "$3.9K",
+          "holders": "999",
+          "heat": 56,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x9b7992cfabecac7843baffd74ff85ec144798caf",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              36,
+              40,
+              50,
+              54,
+              63,
+              63
+          ]
+      },
+      {
+          "rank": 44,
+          "country": {
+              "zh": "约旦",
+              "en": "Jordan"
+          },
+          "symbol": "JOR",
+          "chain": "ETH",
+          "group": "J",
+          "flagUrl": "https://flagcdn.com/w80/jo.png",
+          "price": "$0.0000235",
+          "change24h": 5.28,
+          "cap": "$23.5K",
+          "volume": "$11.6K",
+          "liquidity": "$4.0K",
+          "holders": "1,005",
+          "heat": 55,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x950b6e0b49832073f98cdb8c982311c86a620448",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              37,
+              41,
+              51,
+              55,
+              64,
+              64
+          ]
+      },
+      {
+          "rank": 45,
+          "country": {
+              "zh": "海地",
+              "en": "Haiti"
+          },
+          "symbol": "HAI",
+          "chain": "BSC",
+          "group": "C",
+          "flagUrl": "https://flagcdn.com/w80/ht.png",
+          "price": "$0.0000219",
+          "change24h": 2.33,
+          "cap": "$21.9K",
+          "volume": "$11.6K",
+          "liquidity": "$4.0K",
+          "holders": "1,011",
+          "heat": 54,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0xaa88a98c58afab09ae0a4b7c040843ca8a73446e",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              38,
+              42,
+              52,
+              56,
+              54,
+              65
+          ]
+      },
+      {
+          "rank": 46,
+          "country": {
+              "zh": "刚果民主共和国",
+              "en": "Congo DR"
+          },
+          "symbol": "COD",
+          "chain": "ETH",
+          "group": "K",
+          "flagUrl": "https://flagcdn.com/w80/cd.png",
+          "price": "$0.0000206",
+          "change24h": 6.16,
+          "cap": "$20.6K",
+          "volume": "$11.6K",
+          "liquidity": "$2.8K",
+          "holders": "1,017",
+          "heat": 53,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x47db795416cd0a0dc45a08533410cb6ad6133737",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              39,
+              43,
+              53,
+              48,
+              55,
+              66
+          ]
+      },
+      {
+          "rank": 47,
+          "country": {
+              "zh": "佛得角",
+              "en": "Cabo Verde"
+          },
+          "symbol": "CPV",
+          "chain": "BSC",
+          "group": "H",
+          "flagUrl": "https://flagcdn.com/w80/cv.png",
+          "price": "$0.0000187",
+          "change24h": 1.74,
+          "cap": "$18.7K",
+          "volume": "$11.2K",
+          "liquidity": "$2.7K",
+          "holders": "1,023",
+          "heat": 52,
+          "matchDay": false,
+          "trending": false,
+          "tax": "5%",
+          "contract": "0x8dea5980880a2cb2b29023932be55daabd560566",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              40,
+              44,
+              54,
+              49,
+              56,
+              67
+          ]
+      },
+      {
+          "rank": 48,
+          "country": {
+              "zh": "库拉索",
+              "en": "Curaçao"
+          },
+          "symbol": "CUW",
+          "chain": "SOL",
+          "group": "E",
+          "flagUrl": "https://flagcdn.com/w80/cw.png",
+          "price": "$0.0000164",
+          "change24h": 3.48,
+          "cap": "$16.4K",
+          "volume": "$10.4K",
+          "liquidity": "$2.6K",
+          "holders": "1,029",
+          "heat": 51,
+          "matchDay": false,
+          "trending": false,
+          "tax": "LP",
+          "contract": "CUW111111111111111111111111111111111pump",
+          "dex": "#",
+          "buy": "#",
+          "chart": [
+              28,
+              41,
+              45,
+              55,
+              50,
+              57,
+              68
+          ]
+      }
   ],
   catalysts: [
     { time:'Today 19:00 UTC', fixture:{zh:'墨西哥 vs 南非',en:'Mexico vs South Africa'}, related:['MEX','RSA','WORLDETH'], volume:'+32%', holders:'+8%', signal:{zh:'开幕战注意力',en:'Opening-match attention'}, action:{zh:'赛前观察 / 交易',en:'Watch / trade before kickoff'} },
@@ -1164,22 +2736,2214 @@ window.WORLD_CUP_CONFIG = {
     { type:'buyback', title:{zh:'BSC 回购',en:'BSC Buybacks'}, rows:[['286.19 BNB vault','Live'],['3% main tax','Champion buyback'],['5% team tax','Main token support'],['48 team slots','Gradual launch']] }
   ],
   fixtures: [
-    // Real group stage schedule for Groups A and B (2026 World Cup)
-    // Group A – Mexico, South Africa, Korea Republic, Czechia
-    { group:'A', date:{ zh:'6月11日 周四', en:'Jun 11 Thu' }, teams:{ zh:'墨西哥 vs 南非', en:'Mexico vs South Africa' }, venue:{ zh:'阿兹特克体育场，墨西哥城', en:'Estadio Azteca, Mexico City' }, related:['MEX','RSA'] },
-    { group:'A', date:{ zh:'6月11日 周四', en:'Jun 11 Thu' }, teams:{ zh:'韩国 vs 捷克', en:'Korea Republic vs Czechia' }, venue:{ zh:'阿克伦体育场，瓜达拉哈拉', en:'Estadio Akron, Guadalajara' }, related:['KOR','CZE'] },
-    { group:'A', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'捷克 vs 南非', en:'Czechia vs South Africa' }, venue:{ zh:'梅赛德斯-奔驰体育场，亚特兰大', en:'Mercedes-Benz Stadium, Atlanta' }, related:['CZE','RSA'] },
-    { group:'A', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'墨西哥 vs 韩国', en:'Mexico vs Korea Republic' }, venue:{ zh:'阿克伦体育场，瓜达拉哈拉', en:'Estadio Akron, Guadalajara' }, related:['MEX','KOR'] },
-    { group:'A', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'捷克 vs 墨西哥', en:'Czechia vs Mexico' }, venue:{ zh:'阿兹特克体育场，墨西哥城', en:'Estadio Azteca, Mexico City' }, related:['CZE','MEX'] },
-    { group:'A', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'南非 vs 韩国', en:'South Africa vs Korea Republic' }, venue:{ zh:'BBVA 体育场，蒙特雷', en:'Estadio BBVA, Monterrey' }, related:['RSA','KOR'] },
-
-    // Group B – Canada, Bosnia and Herzegovina, Qatar, Switzerland
-    { group:'B', date:{ zh:'6月12日 周五', en:'Jun 12 Fri' }, teams:{ zh:'加拿大 vs 波黑', en:'Canada vs Bosnia and Herzegovina' }, venue:{ zh:'BMO 球场，多伦多', en:'BMO Field, Toronto' }, related:['CAN','BIH'] },
-    { group:'B', date:{ zh:'6月13日 周六', en:'Jun 13 Sat' }, teams:{ zh:'卡塔尔 vs 瑞士', en:'Qatar vs Switzerland' }, venue:{ zh:'利维斯体育场，圣克拉拉', en:'Levi\'s Stadium, Santa Clara' }, related:['QAT','SUI'] },
-    { group:'B', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'瑞士 vs 波黑', en:'Switzerland vs Bosnia and Herzegovina' }, venue:{ zh:'SoFi 体育场，英格尔伍德', en:'SoFi Stadium, Inglewood' }, related:['SUI','BIH'] },
-    { group:'B', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'加拿大 vs 卡塔尔', en:'Canada vs Qatar' }, venue:{ zh:'BC 场馆，温哥华', en:'BC Place, Vancouver' }, related:['CAN','QAT'] },
-    { group:'B', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'瑞士 vs 加拿大', en:'Switzerland vs Canada' }, venue:{ zh:'BC 场馆，温哥华', en:'BC Place, Vancouver' }, related:['SUI','CAN'] },
-    { group:'B', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'波黑 vs 卡塔尔', en:'Bosnia and Herzegovina vs Qatar' }, venue:{ zh:'流明球场，西雅图', en:'Lumen Field, Seattle' }, related:['BIH','QAT'] }
+      {
+          "match": 1,
+          "group": "A",
+          "date": {
+              "zh": "6月12日 周五 03:00 北京时间",
+              "en": "Jun 11 19:00 UTC"
+          },
+          "teams": {
+              "zh": "墨西哥 vs 南非",
+              "en": "Mexico vs South Africa"
+          },
+          "venue": {
+              "zh": "墨西哥城体育场，墨西哥城",
+              "en": "Mexico City Stadium, Mexico City"
+          },
+          "related": [
+              "MEX",
+              "RSA"
+          ]
+      },
+      {
+          "match": 2,
+          "group": "A",
+          "date": {
+              "zh": "6月12日 周五 10:00 北京时间",
+              "en": "Jun 12 02:00 UTC"
+          },
+          "teams": {
+              "zh": "韩国 vs 捷克",
+              "en": "Korea Republic vs Czechia"
+          },
+          "venue": {
+              "zh": "瓜达拉哈拉体育场，瓜达拉哈拉",
+              "en": "Guadalajara Stadium, Guadalajara"
+          },
+          "related": [
+              "KOR",
+              "CZE"
+          ]
+      },
+      {
+          "match": 3,
+          "group": "B",
+          "date": {
+              "zh": "6月13日 周六 03:00 北京时间",
+              "en": "Jun 12 19:00 UTC"
+          },
+          "teams": {
+              "zh": "加拿大 vs 波黑",
+              "en": "Canada vs Bosnia and Herzegovina"
+          },
+          "venue": {
+              "zh": "多伦多体育场，多伦多",
+              "en": "Toronto Stadium, Toronto"
+          },
+          "related": [
+              "CAN",
+              "BIH"
+          ]
+      },
+      {
+          "match": 4,
+          "group": "D",
+          "date": {
+              "zh": "6月13日 周六 09:00 北京时间",
+              "en": "Jun 13 01:00 UTC"
+          },
+          "teams": {
+              "zh": "美国 vs 巴拉圭",
+              "en": "USA vs Paraguay"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "USA",
+              "PAR"
+          ]
+      },
+      {
+          "match": 8,
+          "group": "B",
+          "date": {
+              "zh": "6月14日 周日 03:00 北京时间",
+              "en": "Jun 13 19:00 UTC"
+          },
+          "teams": {
+              "zh": "卡塔尔 vs 瑞士",
+              "en": "Qatar vs Switzerland"
+          },
+          "venue": {
+              "zh": "旧金山湾区体育场，旧金山湾区",
+              "en": "San Francisco Bay Area Stadium, San Francisco Bay Area"
+          },
+          "related": [
+              "QAT",
+              "SUI"
+          ]
+      },
+      {
+          "match": 7,
+          "group": "C",
+          "date": {
+              "zh": "6月14日 周日 06:00 北京时间",
+              "en": "Jun 13 22:00 UTC"
+          },
+          "teams": {
+              "zh": "巴西 vs 摩洛哥",
+              "en": "Brazil vs Morocco"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "BRA",
+              "MAR"
+          ]
+      },
+      {
+          "match": 5,
+          "group": "C",
+          "date": {
+              "zh": "6月14日 周日 09:00 北京时间",
+              "en": "Jun 14 01:00 UTC"
+          },
+          "teams": {
+              "zh": "海地 vs 苏格兰",
+              "en": "Haiti vs Scotland"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "HAI",
+              "SCO"
+          ]
+      },
+      {
+          "match": 6,
+          "group": "D",
+          "date": {
+              "zh": "6月14日 周日 12:00 北京时间",
+              "en": "Jun 14 04:00 UTC"
+          },
+          "teams": {
+              "zh": "澳大利亚 vs 土耳其",
+              "en": "Australia vs Türkiye"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "AUS",
+              "TUR"
+          ]
+      },
+      {
+          "match": 10,
+          "group": "E",
+          "date": {
+              "zh": "6月15日 周一 01:00 北京时间",
+              "en": "Jun 14 17:00 UTC"
+          },
+          "teams": {
+              "zh": "德国 vs 库拉索",
+              "en": "Germany vs Curaçao"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "GER",
+              "CUW"
+          ]
+      },
+      {
+          "match": 11,
+          "group": "F",
+          "date": {
+              "zh": "6月15日 周一 04:00 北京时间",
+              "en": "Jun 14 20:00 UTC"
+          },
+          "teams": {
+              "zh": "荷兰 vs 日本",
+              "en": "Netherlands vs Japan"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "NED",
+              "JPN"
+          ]
+      },
+      {
+          "match": 9,
+          "group": "E",
+          "date": {
+              "zh": "6月15日 周一 07:00 北京时间",
+              "en": "Jun 14 23:00 UTC"
+          },
+          "teams": {
+              "zh": "科特迪瓦 vs 厄瓜多尔",
+              "en": "Côte d'Ivoire vs Ecuador"
+          },
+          "venue": {
+              "zh": "费城体育场，费城",
+              "en": "Philadelphia Stadium, Philadelphia"
+          },
+          "related": [
+              "CIV",
+              "ECU"
+          ]
+      },
+      {
+          "match": 12,
+          "group": "F",
+          "date": {
+              "zh": "6月15日 周一 10:00 北京时间",
+              "en": "Jun 15 02:00 UTC"
+          },
+          "teams": {
+              "zh": "瑞典 vs 突尼斯",
+              "en": "Sweden vs Tunisia"
+          },
+          "venue": {
+              "zh": "蒙特雷体育场，蒙特雷",
+              "en": "Monterrey Stadium, Monterrey"
+          },
+          "related": [
+              "SWE",
+              "TUN"
+          ]
+      },
+      {
+          "match": 14,
+          "group": "H",
+          "date": {
+              "zh": "6月16日 周二 00:00 北京时间",
+              "en": "Jun 15 16:00 UTC"
+          },
+          "teams": {
+              "zh": "西班牙 vs 佛得角",
+              "en": "Spain vs Cabo Verde"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "ESP",
+              "CPV"
+          ]
+      },
+      {
+          "match": 16,
+          "group": "G",
+          "date": {
+              "zh": "6月16日 周二 03:00 北京时间",
+              "en": "Jun 15 19:00 UTC"
+          },
+          "teams": {
+              "zh": "比利时 vs 埃及",
+              "en": "Belgium vs Egypt"
+          },
+          "venue": {
+              "zh": "西雅图体育场，西雅图",
+              "en": "Seattle Stadium, Seattle"
+          },
+          "related": [
+              "BEL",
+              "EGY"
+          ]
+      },
+      {
+          "match": 13,
+          "group": "H",
+          "date": {
+              "zh": "6月16日 周二 06:00 北京时间",
+              "en": "Jun 15 22:00 UTC"
+          },
+          "teams": {
+              "zh": "沙特阿拉伯 vs 乌拉圭",
+              "en": "Saudi Arabia vs Uruguay"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "KSA",
+              "URU"
+          ]
+      },
+      {
+          "match": 15,
+          "group": "G",
+          "date": {
+              "zh": "6月16日 周二 09:00 北京时间",
+              "en": "Jun 16 01:00 UTC"
+          },
+          "teams": {
+              "zh": "伊朗 vs 新西兰",
+              "en": "IR Iran vs New Zealand"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "IRN",
+              "NZL"
+          ]
+      },
+      {
+          "match": 17,
+          "group": "I",
+          "date": {
+              "zh": "6月17日 周三 03:00 北京时间",
+              "en": "Jun 16 19:00 UTC"
+          },
+          "teams": {
+              "zh": "法国 vs 塞内加尔",
+              "en": "France vs Senegal"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "FRA",
+              "SEN"
+          ]
+      },
+      {
+          "match": 18,
+          "group": "I",
+          "date": {
+              "zh": "6月17日 周三 06:00 北京时间",
+              "en": "Jun 16 22:00 UTC"
+          },
+          "teams": {
+              "zh": "伊拉克 vs 挪威",
+              "en": "Iraq vs Norway"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "IRQ",
+              "NOR"
+          ]
+      },
+      {
+          "match": 19,
+          "group": "J",
+          "date": {
+              "zh": "6月17日 周三 09:00 北京时间",
+              "en": "Jun 17 01:00 UTC"
+          },
+          "teams": {
+              "zh": "阿根廷 vs 阿尔及利亚",
+              "en": "Argentina vs Algeria"
+          },
+          "venue": {
+              "zh": "堪萨斯城体育场，堪萨斯城",
+              "en": "Kansas City Stadium, Kansas City"
+          },
+          "related": [
+              "ARG",
+              "ALG"
+          ]
+      },
+      {
+          "match": 20,
+          "group": "J",
+          "date": {
+              "zh": "6月17日 周三 12:00 北京时间",
+              "en": "Jun 17 04:00 UTC"
+          },
+          "teams": {
+              "zh": "奥地利 vs 约旦",
+              "en": "Austria vs Jordan"
+          },
+          "venue": {
+              "zh": "旧金山湾区体育场，旧金山湾区",
+              "en": "San Francisco Bay Area Stadium, San Francisco Bay Area"
+          },
+          "related": [
+              "AUT",
+              "JOR"
+          ]
+      },
+      {
+          "match": 23,
+          "group": "K",
+          "date": {
+              "zh": "6月18日 周四 01:00 北京时间",
+              "en": "Jun 17 17:00 UTC"
+          },
+          "teams": {
+              "zh": "葡萄牙 vs 刚果民主共和国",
+              "en": "Portugal vs Congo DR"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "POR",
+              "COD"
+          ]
+      },
+      {
+          "match": 22,
+          "group": "L",
+          "date": {
+              "zh": "6月18日 周四 04:00 北京时间",
+              "en": "Jun 17 20:00 UTC"
+          },
+          "teams": {
+              "zh": "英格兰 vs 克罗地亚",
+              "en": "England vs Croatia"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "ENG",
+              "CRO"
+          ]
+      },
+      {
+          "match": 21,
+          "group": "L",
+          "date": {
+              "zh": "6月18日 周四 07:00 北京时间",
+              "en": "Jun 17 23:00 UTC"
+          },
+          "teams": {
+              "zh": "加纳 vs 巴拿马",
+              "en": "Ghana vs Panama"
+          },
+          "venue": {
+              "zh": "多伦多体育场，多伦多",
+              "en": "Toronto Stadium, Toronto"
+          },
+          "related": [
+              "GHA",
+              "PAN"
+          ]
+      },
+      {
+          "match": 24,
+          "group": "K",
+          "date": {
+              "zh": "6月18日 周四 10:00 北京时间",
+              "en": "Jun 18 02:00 UTC"
+          },
+          "teams": {
+              "zh": "乌兹别克斯坦 vs 哥伦比亚",
+              "en": "Uzbekistan vs Colombia"
+          },
+          "venue": {
+              "zh": "墨西哥城体育场，墨西哥城",
+              "en": "Mexico City Stadium, Mexico City"
+          },
+          "related": [
+              "UZB",
+              "COL"
+          ]
+      },
+      {
+          "match": 25,
+          "group": "A",
+          "date": {
+              "zh": "6月19日 周五 00:00 北京时间",
+              "en": "Jun 18 16:00 UTC"
+          },
+          "teams": {
+              "zh": "捷克 vs 南非",
+              "en": "Czechia vs South Africa"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "CZE",
+              "RSA"
+          ]
+      },
+      {
+          "match": 26,
+          "group": "B",
+          "date": {
+              "zh": "6月19日 周五 03:00 北京时间",
+              "en": "Jun 18 19:00 UTC"
+          },
+          "teams": {
+              "zh": "瑞士 vs 波黑",
+              "en": "Switzerland vs Bosnia and Herzegovina"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "SUI",
+              "BIH"
+          ]
+      },
+      {
+          "match": 27,
+          "group": "B",
+          "date": {
+              "zh": "6月19日 周五 06:00 北京时间",
+              "en": "Jun 18 22:00 UTC"
+          },
+          "teams": {
+              "zh": "加拿大 vs 卡塔尔",
+              "en": "Canada vs Qatar"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "CAN",
+              "QAT"
+          ]
+      },
+      {
+          "match": 28,
+          "group": "A",
+          "date": {
+              "zh": "6月19日 周五 09:00 北京时间",
+              "en": "Jun 19 01:00 UTC"
+          },
+          "teams": {
+              "zh": "墨西哥 vs 韩国",
+              "en": "Mexico vs Korea Republic"
+          },
+          "venue": {
+              "zh": "瓜达拉哈拉体育场，瓜达拉哈拉",
+              "en": "Guadalajara Stadium, Guadalajara"
+          },
+          "related": [
+              "MEX",
+              "KOR"
+          ]
+      },
+      {
+          "match": 32,
+          "group": "D",
+          "date": {
+              "zh": "6月20日 周六 03:00 北京时间",
+              "en": "Jun 19 19:00 UTC"
+          },
+          "teams": {
+              "zh": "美国 vs 澳大利亚",
+              "en": "USA vs Australia"
+          },
+          "venue": {
+              "zh": "西雅图体育场，西雅图",
+              "en": "Seattle Stadium, Seattle"
+          },
+          "related": [
+              "USA",
+              "AUS"
+          ]
+      },
+      {
+          "match": 30,
+          "group": "C",
+          "date": {
+              "zh": "6月20日 周六 06:00 北京时间",
+              "en": "Jun 19 22:00 UTC"
+          },
+          "teams": {
+              "zh": "苏格兰 vs 摩洛哥",
+              "en": "Scotland vs Morocco"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "SCO",
+              "MAR"
+          ]
+      },
+      {
+          "match": 29,
+          "group": "C",
+          "date": {
+              "zh": "6月20日 周六 08:30 北京时间",
+              "en": "Jun 20 00:30 UTC"
+          },
+          "teams": {
+              "zh": "巴西 vs 海地",
+              "en": "Brazil vs Haiti"
+          },
+          "venue": {
+              "zh": "费城体育场，费城",
+              "en": "Philadelphia Stadium, Philadelphia"
+          },
+          "related": [
+              "BRA",
+              "HAI"
+          ]
+      },
+      {
+          "match": 31,
+          "group": "D",
+          "date": {
+              "zh": "6月20日 周六 11:00 北京时间",
+              "en": "Jun 20 03:00 UTC"
+          },
+          "teams": {
+              "zh": "土耳其 vs 巴拉圭",
+              "en": "Türkiye vs Paraguay"
+          },
+          "venue": {
+              "zh": "旧金山湾区体育场，旧金山湾区",
+              "en": "San Francisco Bay Area Stadium, San Francisco Bay Area"
+          },
+          "related": [
+              "TUR",
+              "PAR"
+          ]
+      },
+      {
+          "match": 35,
+          "group": "F",
+          "date": {
+              "zh": "6月21日 周日 01:00 北京时间",
+              "en": "Jun 20 17:00 UTC"
+          },
+          "teams": {
+              "zh": "荷兰 vs 瑞典",
+              "en": "Netherlands vs Sweden"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "NED",
+              "SWE"
+          ]
+      },
+      {
+          "match": 33,
+          "group": "E",
+          "date": {
+              "zh": "6月21日 周日 04:00 北京时间",
+              "en": "Jun 20 20:00 UTC"
+          },
+          "teams": {
+              "zh": "德国 vs 科特迪瓦",
+              "en": "Germany vs Côte d'Ivoire"
+          },
+          "venue": {
+              "zh": "多伦多体育场，多伦多",
+              "en": "Toronto Stadium, Toronto"
+          },
+          "related": [
+              "GER",
+              "CIV"
+          ]
+      },
+      {
+          "match": 34,
+          "group": "E",
+          "date": {
+              "zh": "6月21日 周日 08:00 北京时间",
+              "en": "Jun 21 00:00 UTC"
+          },
+          "teams": {
+              "zh": "厄瓜多尔 vs 库拉索",
+              "en": "Ecuador vs Curaçao"
+          },
+          "venue": {
+              "zh": "堪萨斯城体育场，堪萨斯城",
+              "en": "Kansas City Stadium, Kansas City"
+          },
+          "related": [
+              "ECU",
+              "CUW"
+          ]
+      },
+      {
+          "match": 36,
+          "group": "F",
+          "date": {
+              "zh": "6月21日 周日 12:00 北京时间",
+              "en": "Jun 21 04:00 UTC"
+          },
+          "teams": {
+              "zh": "突尼斯 vs 日本",
+              "en": "Tunisia vs Japan"
+          },
+          "venue": {
+              "zh": "蒙特雷体育场，蒙特雷",
+              "en": "Monterrey Stadium, Monterrey"
+          },
+          "related": [
+              "TUN",
+              "JPN"
+          ]
+      },
+      {
+          "match": 38,
+          "group": "H",
+          "date": {
+              "zh": "6月22日 周一 00:00 北京时间",
+              "en": "Jun 21 16:00 UTC"
+          },
+          "teams": {
+              "zh": "西班牙 vs 沙特阿拉伯",
+              "en": "Spain vs Saudi Arabia"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "ESP",
+              "KSA"
+          ]
+      },
+      {
+          "match": 39,
+          "group": "G",
+          "date": {
+              "zh": "6月22日 周一 03:00 北京时间",
+              "en": "Jun 21 19:00 UTC"
+          },
+          "teams": {
+              "zh": "比利时 vs 伊朗",
+              "en": "Belgium vs IR Iran"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "BEL",
+              "IRN"
+          ]
+      },
+      {
+          "match": 37,
+          "group": "H",
+          "date": {
+              "zh": "6月22日 周一 06:00 北京时间",
+              "en": "Jun 21 22:00 UTC"
+          },
+          "teams": {
+              "zh": "乌拉圭 vs 佛得角",
+              "en": "Uruguay vs Cabo Verde"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "URU",
+              "CPV"
+          ]
+      },
+      {
+          "match": 40,
+          "group": "G",
+          "date": {
+              "zh": "6月22日 周一 09:00 北京时间",
+              "en": "Jun 22 01:00 UTC"
+          },
+          "teams": {
+              "zh": "新西兰 vs 埃及",
+              "en": "New Zealand vs Egypt"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "NZL",
+              "EGY"
+          ]
+      },
+      {
+          "match": 43,
+          "group": "J",
+          "date": {
+              "zh": "6月23日 周二 01:00 北京时间",
+              "en": "Jun 22 17:00 UTC"
+          },
+          "teams": {
+              "zh": "阿根廷 vs 奥地利",
+              "en": "Argentina vs Austria"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "ARG",
+              "AUT"
+          ]
+      },
+      {
+          "match": 42,
+          "group": "I",
+          "date": {
+              "zh": "6月23日 周二 05:00 北京时间",
+              "en": "Jun 22 21:00 UTC"
+          },
+          "teams": {
+              "zh": "法国 vs 伊拉克",
+              "en": "France vs Iraq"
+          },
+          "venue": {
+              "zh": "费城体育场，费城",
+              "en": "Philadelphia Stadium, Philadelphia"
+          },
+          "related": [
+              "FRA",
+              "IRQ"
+          ]
+      },
+      {
+          "match": 41,
+          "group": "I",
+          "date": {
+              "zh": "6月23日 周二 08:00 北京时间",
+              "en": "Jun 23 00:00 UTC"
+          },
+          "teams": {
+              "zh": "挪威 vs 塞内加尔",
+              "en": "Norway vs Senegal"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "NOR",
+              "SEN"
+          ]
+      },
+      {
+          "match": 44,
+          "group": "J",
+          "date": {
+              "zh": "6月23日 周二 11:00 北京时间",
+              "en": "Jun 23 03:00 UTC"
+          },
+          "teams": {
+              "zh": "约旦 vs 阿尔及利亚",
+              "en": "Jordan vs Algeria"
+          },
+          "venue": {
+              "zh": "旧金山湾区体育场，旧金山湾区",
+              "en": "San Francisco Bay Area Stadium, San Francisco Bay Area"
+          },
+          "related": [
+              "JOR",
+              "ALG"
+          ]
+      },
+      {
+          "match": 47,
+          "group": "K",
+          "date": {
+              "zh": "6月24日 周三 01:00 北京时间",
+              "en": "Jun 23 17:00 UTC"
+          },
+          "teams": {
+              "zh": "葡萄牙 vs 乌兹别克斯坦",
+              "en": "Portugal vs Uzbekistan"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "POR",
+              "UZB"
+          ]
+      },
+      {
+          "match": 45,
+          "group": "L",
+          "date": {
+              "zh": "6月24日 周三 04:00 北京时间",
+              "en": "Jun 23 20:00 UTC"
+          },
+          "teams": {
+              "zh": "英格兰 vs 加纳",
+              "en": "England vs Ghana"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "ENG",
+              "GHA"
+          ]
+      },
+      {
+          "match": 46,
+          "group": "L",
+          "date": {
+              "zh": "6月24日 周三 07:00 北京时间",
+              "en": "Jun 23 23:00 UTC"
+          },
+          "teams": {
+              "zh": "巴拿马 vs 克罗地亚",
+              "en": "Panama vs Croatia"
+          },
+          "venue": {
+              "zh": "多伦多体育场，多伦多",
+              "en": "Toronto Stadium, Toronto"
+          },
+          "related": [
+              "PAN",
+              "CRO"
+          ]
+      },
+      {
+          "match": 48,
+          "group": "K",
+          "date": {
+              "zh": "6月24日 周三 10:00 北京时间",
+              "en": "Jun 24 02:00 UTC"
+          },
+          "teams": {
+              "zh": "哥伦比亚 vs 刚果民主共和国",
+              "en": "Colombia vs Congo DR"
+          },
+          "venue": {
+              "zh": "瓜达拉哈拉体育场，瓜达拉哈拉",
+              "en": "Guadalajara Stadium, Guadalajara"
+          },
+          "related": [
+              "COL",
+              "COD"
+          ]
+      },
+      {
+          "match": 52,
+          "group": "B",
+          "date": {
+              "zh": "6月25日 周四 03:00 北京时间",
+              "en": "Jun 24 19:00 UTC"
+          },
+          "teams": {
+              "zh": "波黑 vs 卡塔尔",
+              "en": "Bosnia and Herzegovina vs Qatar"
+          },
+          "venue": {
+              "zh": "西雅图体育场，西雅图",
+              "en": "Seattle Stadium, Seattle"
+          },
+          "related": [
+              "BIH",
+              "QAT"
+          ]
+      },
+      {
+          "match": 51,
+          "group": "B",
+          "date": {
+              "zh": "6月25日 周四 03:00 北京时间",
+              "en": "Jun 24 19:00 UTC"
+          },
+          "teams": {
+              "zh": "瑞士 vs 加拿大",
+              "en": "Switzerland vs Canada"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "SUI",
+              "CAN"
+          ]
+      },
+      {
+          "match": 50,
+          "group": "C",
+          "date": {
+              "zh": "6月25日 周四 06:00 北京时间",
+              "en": "Jun 24 22:00 UTC"
+          },
+          "teams": {
+              "zh": "摩洛哥 vs 海地",
+              "en": "Morocco vs Haiti"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "MAR",
+              "HAI"
+          ]
+      },
+      {
+          "match": 49,
+          "group": "C",
+          "date": {
+              "zh": "6月25日 周四 06:00 北京时间",
+              "en": "Jun 24 22:00 UTC"
+          },
+          "teams": {
+              "zh": "苏格兰 vs 巴西",
+              "en": "Scotland vs Brazil"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "SCO",
+              "BRA"
+          ]
+      },
+      {
+          "match": 54,
+          "group": "A",
+          "date": {
+              "zh": "6月25日 周四 09:00 北京时间",
+              "en": "Jun 25 01:00 UTC"
+          },
+          "teams": {
+              "zh": "南非 vs 韩国",
+              "en": "South Africa vs Korea Republic"
+          },
+          "venue": {
+              "zh": "蒙特雷体育场，蒙特雷",
+              "en": "Monterrey Stadium, Monterrey"
+          },
+          "related": [
+              "RSA",
+              "KOR"
+          ]
+      },
+      {
+          "match": 53,
+          "group": "A",
+          "date": {
+              "zh": "6月25日 周四 09:00 北京时间",
+              "en": "Jun 25 01:00 UTC"
+          },
+          "teams": {
+              "zh": "捷克 vs 墨西哥",
+              "en": "Czechia vs Mexico"
+          },
+          "venue": {
+              "zh": "墨西哥城体育场，墨西哥城",
+              "en": "Mexico City Stadium, Mexico City"
+          },
+          "related": [
+              "CZE",
+              "MEX"
+          ]
+      },
+      {
+          "match": 55,
+          "group": "E",
+          "date": {
+              "zh": "6月26日 周五 04:00 北京时间",
+              "en": "Jun 25 20:00 UTC"
+          },
+          "teams": {
+              "zh": "库拉索 vs 科特迪瓦",
+              "en": "Curaçao vs Côte d'Ivoire"
+          },
+          "venue": {
+              "zh": "费城体育场，费城",
+              "en": "Philadelphia Stadium, Philadelphia"
+          },
+          "related": [
+              "CUW",
+              "CIV"
+          ]
+      },
+      {
+          "match": 56,
+          "group": "E",
+          "date": {
+              "zh": "6月26日 周五 04:00 北京时间",
+              "en": "Jun 25 20:00 UTC"
+          },
+          "teams": {
+              "zh": "厄瓜多尔 vs 德国",
+              "en": "Ecuador vs Germany"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "ECU",
+              "GER"
+          ]
+      },
+      {
+          "match": 58,
+          "group": "F",
+          "date": {
+              "zh": "6月26日 周五 07:00 北京时间",
+              "en": "Jun 25 23:00 UTC"
+          },
+          "teams": {
+              "zh": "突尼斯 vs 荷兰",
+              "en": "Tunisia vs Netherlands"
+          },
+          "venue": {
+              "zh": "堪萨斯城体育场，堪萨斯城",
+              "en": "Kansas City Stadium, Kansas City"
+          },
+          "related": [
+              "TUN",
+              "NED"
+          ]
+      },
+      {
+          "match": 57,
+          "group": "F",
+          "date": {
+              "zh": "6月26日 周五 07:00 北京时间",
+              "en": "Jun 25 23:00 UTC"
+          },
+          "teams": {
+              "zh": "日本 vs 瑞典",
+              "en": "Japan vs Sweden"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "JPN",
+              "SWE"
+          ]
+      },
+      {
+          "match": 60,
+          "group": "D",
+          "date": {
+              "zh": "6月26日 周五 10:00 北京时间",
+              "en": "Jun 26 02:00 UTC"
+          },
+          "teams": {
+              "zh": "巴拉圭 vs 澳大利亚",
+              "en": "Paraguay vs Australia"
+          },
+          "venue": {
+              "zh": "旧金山湾区体育场，旧金山湾区",
+              "en": "San Francisco Bay Area Stadium, San Francisco Bay Area"
+          },
+          "related": [
+              "PAR",
+              "AUS"
+          ]
+      },
+      {
+          "match": 59,
+          "group": "D",
+          "date": {
+              "zh": "6月26日 周五 10:00 北京时间",
+              "en": "Jun 26 02:00 UTC"
+          },
+          "teams": {
+              "zh": "土耳其 vs 美国",
+              "en": "Türkiye vs USA"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "TUR",
+              "USA"
+          ]
+      },
+      {
+          "match": 62,
+          "group": "I",
+          "date": {
+              "zh": "6月27日 周六 03:00 北京时间",
+              "en": "Jun 26 19:00 UTC"
+          },
+          "teams": {
+              "zh": "塞内加尔 vs 伊拉克",
+              "en": "Senegal vs Iraq"
+          },
+          "venue": {
+              "zh": "多伦多体育场，多伦多",
+              "en": "Toronto Stadium, Toronto"
+          },
+          "related": [
+              "SEN",
+              "IRQ"
+          ]
+      },
+      {
+          "match": 61,
+          "group": "I",
+          "date": {
+              "zh": "6月27日 周六 03:00 北京时间",
+              "en": "Jun 26 19:00 UTC"
+          },
+          "teams": {
+              "zh": "挪威 vs 法国",
+              "en": "Norway vs France"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "NOR",
+              "FRA"
+          ]
+      },
+      {
+          "match": 66,
+          "group": "H",
+          "date": {
+              "zh": "6月27日 周六 08:00 北京时间",
+              "en": "Jun 27 00:00 UTC"
+          },
+          "teams": {
+              "zh": "乌拉圭 vs 西班牙",
+              "en": "Uruguay vs Spain"
+          },
+          "venue": {
+              "zh": "瓜达拉哈拉体育场，瓜达拉哈拉",
+              "en": "Guadalajara Stadium, Guadalajara"
+          },
+          "related": [
+              "URU",
+              "ESP"
+          ]
+      },
+      {
+          "match": 65,
+          "group": "H",
+          "date": {
+              "zh": "6月27日 周六 08:00 北京时间",
+              "en": "Jun 27 00:00 UTC"
+          },
+          "teams": {
+              "zh": "佛得角 vs 沙特阿拉伯",
+              "en": "Cabo Verde vs Saudi Arabia"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "CPV",
+              "KSA"
+          ]
+      },
+      {
+          "match": 64,
+          "group": "G",
+          "date": {
+              "zh": "6月27日 周六 11:00 北京时间",
+              "en": "Jun 27 03:00 UTC"
+          },
+          "teams": {
+              "zh": "新西兰 vs 比利时",
+              "en": "New Zealand vs Belgium"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "NZL",
+              "BEL"
+          ]
+      },
+      {
+          "match": 63,
+          "group": "G",
+          "date": {
+              "zh": "6月27日 周六 11:00 北京时间",
+              "en": "Jun 27 03:00 UTC"
+          },
+          "teams": {
+              "zh": "埃及 vs 伊朗",
+              "en": "Egypt vs IR Iran"
+          },
+          "venue": {
+              "zh": "西雅图体育场，西雅图",
+              "en": "Seattle Stadium, Seattle"
+          },
+          "related": [
+              "EGY",
+              "IRN"
+          ]
+      },
+      {
+          "match": 67,
+          "group": "L",
+          "date": {
+              "zh": "6月28日 周日 05:00 北京时间",
+              "en": "Jun 27 21:00 UTC"
+          },
+          "teams": {
+              "zh": "巴拿马 vs 英格兰",
+              "en": "Panama vs England"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "PAN",
+              "ENG"
+          ]
+      },
+      {
+          "match": 68,
+          "group": "L",
+          "date": {
+              "zh": "6月28日 周日 05:00 北京时间",
+              "en": "Jun 27 21:00 UTC"
+          },
+          "teams": {
+              "zh": "克罗地亚 vs 加纳",
+              "en": "Croatia vs Ghana"
+          },
+          "venue": {
+              "zh": "费城体育场，费城",
+              "en": "Philadelphia Stadium, Philadelphia"
+          },
+          "related": [
+              "CRO",
+              "GHA"
+          ]
+      },
+      {
+          "match": 72,
+          "group": "K",
+          "date": {
+              "zh": "6月28日 周日 07:30 北京时间",
+              "en": "Jun 27 23:30 UTC"
+          },
+          "teams": {
+              "zh": "刚果民主共和国 vs 乌兹别克斯坦",
+              "en": "Congo DR vs Uzbekistan"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "COD",
+              "UZB"
+          ]
+      },
+      {
+          "match": 71,
+          "group": "K",
+          "date": {
+              "zh": "6月28日 周日 07:30 北京时间",
+              "en": "Jun 27 23:30 UTC"
+          },
+          "teams": {
+              "zh": "哥伦比亚 vs 葡萄牙",
+              "en": "Colombia vs Portugal"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "COL",
+              "POR"
+          ]
+      },
+      {
+          "match": 69,
+          "group": "J",
+          "date": {
+              "zh": "6月28日 周日 10:00 北京时间",
+              "en": "Jun 28 02:00 UTC"
+          },
+          "teams": {
+              "zh": "阿尔及利亚 vs 奥地利",
+              "en": "Algeria vs Austria"
+          },
+          "venue": {
+              "zh": "堪萨斯城体育场，堪萨斯城",
+              "en": "Kansas City Stadium, Kansas City"
+          },
+          "related": [
+              "ALG",
+              "AUT"
+          ]
+      },
+      {
+          "match": 70,
+          "group": "J",
+          "date": {
+              "zh": "6月28日 周日 10:00 北京时间",
+              "en": "Jun 28 02:00 UTC"
+          },
+          "teams": {
+              "zh": "约旦 vs 阿根廷",
+              "en": "Jordan vs Argentina"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "JOR",
+              "ARG"
+          ]
+      },
+      {
+          "match": 73,
+          "group": "R32",
+          "date": {
+              "zh": "6月29日 周一 03:00 北京时间",
+              "en": "Jun 28 19:00 UTC"
+          },
+          "teams": {
+              "zh": "A组第2 vs B组第2",
+              "en": "Runner-up Group A vs Runner-up Group B"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "2A",
+              "2B"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 76,
+          "group": "R32",
+          "date": {
+              "zh": "6月30日 周二 01:00 北京时间",
+              "en": "Jun 29 17:00 UTC"
+          },
+          "teams": {
+              "zh": "C组第1 vs F组第2",
+              "en": "Winner Group C vs Runner-up Group F"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "1C",
+              "2F"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 74,
+          "group": "R32",
+          "date": {
+              "zh": "6月30日 周二 04:30 北京时间",
+              "en": "Jun 29 20:30 UTC"
+          },
+          "teams": {
+              "zh": "E组第1 vs A/B/C/D/F组最佳第三",
+              "en": "Winner Group E vs Best 3rd A/B/C/D/F"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "1E",
+              "3ABCDF"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 75,
+          "group": "R32",
+          "date": {
+              "zh": "6月30日 周二 09:00 北京时间",
+              "en": "Jun 30 01:00 UTC"
+          },
+          "teams": {
+              "zh": "F组第1 vs C组第2",
+              "en": "Winner Group F vs Runner-up Group C"
+          },
+          "venue": {
+              "zh": "蒙特雷体育场，蒙特雷",
+              "en": "Monterrey Stadium, Monterrey"
+          },
+          "related": [
+              "1F",
+              "2C"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 78,
+          "group": "R32",
+          "date": {
+              "zh": "7月1日 周三 01:00 北京时间",
+              "en": "Jun 30 17:00 UTC"
+          },
+          "teams": {
+              "zh": "E组第2 vs I组第2",
+              "en": "Runner-up Group E vs Runner-up Group I"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "2E",
+              "2I"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 77,
+          "group": "R32",
+          "date": {
+              "zh": "7月1日 周三 05:00 北京时间",
+              "en": "Jun 30 21:00 UTC"
+          },
+          "teams": {
+              "zh": "I组第1 vs C/D/F/G/H组最佳第三",
+              "en": "Winner Group I vs Best 3rd C/D/F/G/H"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "1I",
+              "3CDFGH"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 79,
+          "group": "R32",
+          "date": {
+              "zh": "7月1日 周三 09:00 北京时间",
+              "en": "Jul 1 01:00 UTC"
+          },
+          "teams": {
+              "zh": "A组第1 vs C/E/F/H/I组最佳第三",
+              "en": "Winner Group A vs Best 3rd C/E/F/H/I"
+          },
+          "venue": {
+              "zh": "墨西哥城体育场，墨西哥城",
+              "en": "Mexico City Stadium, Mexico City"
+          },
+          "related": [
+              "1A",
+              "3CEFHI"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 80,
+          "group": "R32",
+          "date": {
+              "zh": "7月2日 周四 00:00 北京时间",
+              "en": "Jul 1 16:00 UTC"
+          },
+          "teams": {
+              "zh": "L组第1 vs E/H/I/J/K组最佳第三",
+              "en": "Winner Group L vs Best 3rd E/H/I/J/K"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "1L",
+              "3EHIJK"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 82,
+          "group": "R32",
+          "date": {
+              "zh": "7月2日 周四 04:00 北京时间",
+              "en": "Jul 1 20:00 UTC"
+          },
+          "teams": {
+              "zh": "G组第1 vs A/E/H/I/J组最佳第三",
+              "en": "Winner Group G vs Best 3rd A/E/H/I/J"
+          },
+          "venue": {
+              "zh": "西雅图体育场，西雅图",
+              "en": "Seattle Stadium, Seattle"
+          },
+          "related": [
+              "1G",
+              "3AEHIJ"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 81,
+          "group": "R32",
+          "date": {
+              "zh": "7月2日 周四 08:00 北京时间",
+              "en": "Jul 2 00:00 UTC"
+          },
+          "teams": {
+              "zh": "D组第1 vs B/E/F/I/J组最佳第三",
+              "en": "Winner Group D vs Best 3rd B/E/F/I/J"
+          },
+          "venue": {
+              "zh": "旧金山湾区体育场，旧金山湾区",
+              "en": "San Francisco Bay Area Stadium, San Francisco Bay Area"
+          },
+          "related": [
+              "1D",
+              "3BEFIJ"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 84,
+          "group": "R32",
+          "date": {
+              "zh": "7月3日 周五 03:00 北京时间",
+              "en": "Jul 2 19:00 UTC"
+          },
+          "teams": {
+              "zh": "H组第1 vs J组第2",
+              "en": "Winner Group H vs Runner-up Group J"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "1H",
+              "2J"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 83,
+          "group": "R32",
+          "date": {
+              "zh": "7月3日 周五 07:00 北京时间",
+              "en": "Jul 2 23:00 UTC"
+          },
+          "teams": {
+              "zh": "K组第2 vs L组第2",
+              "en": "Runner-up Group K vs Runner-up Group L"
+          },
+          "venue": {
+              "zh": "多伦多体育场，多伦多",
+              "en": "Toronto Stadium, Toronto"
+          },
+          "related": [
+              "2K",
+              "2L"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 85,
+          "group": "R32",
+          "date": {
+              "zh": "7月3日 周五 11:00 北京时间",
+              "en": "Jul 3 03:00 UTC"
+          },
+          "teams": {
+              "zh": "B组第1 vs E/F/G/I/J组最佳第三",
+              "en": "Winner Group B vs Best 3rd E/F/G/I/J"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "1B",
+              "3EFGIJ"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 88,
+          "group": "R32",
+          "date": {
+              "zh": "7月4日 周六 02:00 北京时间",
+              "en": "Jul 3 18:00 UTC"
+          },
+          "teams": {
+              "zh": "D组第2 vs G组第2",
+              "en": "Runner-up Group D vs Runner-up Group G"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "2D",
+              "2G"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 86,
+          "group": "R32",
+          "date": {
+              "zh": "7月4日 周六 06:00 北京时间",
+              "en": "Jul 3 22:00 UTC"
+          },
+          "teams": {
+              "zh": "J组第1 vs H组第2",
+              "en": "Winner Group J vs Runner-up Group H"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "1J",
+              "2H"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 87,
+          "group": "R32",
+          "date": {
+              "zh": "7月4日 周六 09:30 北京时间",
+              "en": "Jul 4 01:30 UTC"
+          },
+          "teams": {
+              "zh": "K组第1 vs D/E/I/J/L组最佳第三",
+              "en": "Winner Group K vs Best 3rd D/E/I/J/L"
+          },
+          "venue": {
+              "zh": "堪萨斯城体育场，堪萨斯城",
+              "en": "Kansas City Stadium, Kansas City"
+          },
+          "related": [
+              "1K",
+              "3DEIJL"
+          ],
+          "stage": {
+              "zh": "32强赛",
+              "en": "Round of 32"
+          }
+      },
+      {
+          "match": 90,
+          "group": "R16",
+          "date": {
+              "zh": "7月5日 周日 01:00 北京时间",
+              "en": "Jul 4 17:00 UTC"
+          },
+          "teams": {
+              "zh": "第73场胜者 vs 第75场胜者",
+              "en": "Winner Match 73 vs Winner Match 75"
+          },
+          "venue": {
+              "zh": "休斯敦体育场，休斯敦",
+              "en": "Houston Stadium, Houston"
+          },
+          "related": [
+              "W73",
+              "W75"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 89,
+          "group": "R16",
+          "date": {
+              "zh": "7月5日 周日 05:00 北京时间",
+              "en": "Jul 4 21:00 UTC"
+          },
+          "teams": {
+              "zh": "第74场胜者 vs 第77场胜者",
+              "en": "Winner Match 74 vs Winner Match 77"
+          },
+          "venue": {
+              "zh": "费城体育场，费城",
+              "en": "Philadelphia Stadium, Philadelphia"
+          },
+          "related": [
+              "W74",
+              "W77"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 91,
+          "group": "R16",
+          "date": {
+              "zh": "7月6日 周一 04:00 北京时间",
+              "en": "Jul 5 20:00 UTC"
+          },
+          "teams": {
+              "zh": "第76场胜者 vs 第78场胜者",
+              "en": "Winner Match 76 vs Winner Match 78"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "W76",
+              "W78"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 92,
+          "group": "R16",
+          "date": {
+              "zh": "7月6日 周一 08:00 北京时间",
+              "en": "Jul 6 00:00 UTC"
+          },
+          "teams": {
+              "zh": "第79场胜者 vs 第80场胜者",
+              "en": "Winner Match 79 vs Winner Match 80"
+          },
+          "venue": {
+              "zh": "墨西哥城体育场，墨西哥城",
+              "en": "Mexico City Stadium, Mexico City"
+          },
+          "related": [
+              "W79",
+              "W80"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 93,
+          "group": "R16",
+          "date": {
+              "zh": "7月7日 周二 03:00 北京时间",
+              "en": "Jul 6 19:00 UTC"
+          },
+          "teams": {
+              "zh": "第83场胜者 vs 第84场胜者",
+              "en": "Winner Match 83 vs Winner Match 84"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "W83",
+              "W84"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 94,
+          "group": "R16",
+          "date": {
+              "zh": "7月7日 周二 08:00 北京时间",
+              "en": "Jul 7 00:00 UTC"
+          },
+          "teams": {
+              "zh": "第81场胜者 vs 第82场胜者",
+              "en": "Winner Match 81 vs Winner Match 82"
+          },
+          "venue": {
+              "zh": "西雅图体育场，西雅图",
+              "en": "Seattle Stadium, Seattle"
+          },
+          "related": [
+              "W81",
+              "W82"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 95,
+          "group": "R16",
+          "date": {
+              "zh": "7月8日 周三 00:00 北京时间",
+              "en": "Jul 7 16:00 UTC"
+          },
+          "teams": {
+              "zh": "第86场胜者 vs 第88场胜者",
+              "en": "Winner Match 86 vs Winner Match 88"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "W86",
+              "W88"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 96,
+          "group": "R16",
+          "date": {
+              "zh": "7月8日 周三 04:00 北京时间",
+              "en": "Jul 7 20:00 UTC"
+          },
+          "teams": {
+              "zh": "第85场胜者 vs 第87场胜者",
+              "en": "Winner Match 85 vs Winner Match 87"
+          },
+          "venue": {
+              "zh": "温哥华 BC Place，温哥华",
+              "en": "BC Place Vancouver, Vancouver"
+          },
+          "related": [
+              "W85",
+              "W87"
+          ],
+          "stage": {
+              "zh": "16强赛",
+              "en": "Round of 16"
+          }
+      },
+      {
+          "match": 97,
+          "group": "QF",
+          "date": {
+              "zh": "7月10日 周五 04:00 北京时间",
+              "en": "Jul 9 20:00 UTC"
+          },
+          "teams": {
+              "zh": "第89场胜者 vs 第90场胜者",
+              "en": "Winner Match 89 vs Winner Match 90"
+          },
+          "venue": {
+              "zh": "波士顿体育场，波士顿",
+              "en": "Boston Stadium, Boston"
+          },
+          "related": [
+              "W89",
+              "W90"
+          ],
+          "stage": {
+              "zh": "1/4决赛",
+              "en": "Quarter-final"
+          }
+      },
+      {
+          "match": 98,
+          "group": "QF",
+          "date": {
+              "zh": "7月11日 周六 03:00 北京时间",
+              "en": "Jul 10 19:00 UTC"
+          },
+          "teams": {
+              "zh": "第93场胜者 vs 第94场胜者",
+              "en": "Winner Match 93 vs Winner Match 94"
+          },
+          "venue": {
+              "zh": "洛杉矶体育场，洛杉矶",
+              "en": "Los Angeles Stadium, Los Angeles"
+          },
+          "related": [
+              "W93",
+              "W94"
+          ],
+          "stage": {
+              "zh": "1/4决赛",
+              "en": "Quarter-final"
+          }
+      },
+      {
+          "match": 99,
+          "group": "QF",
+          "date": {
+              "zh": "7月12日 周日 05:00 北京时间",
+              "en": "Jul 11 21:00 UTC"
+          },
+          "teams": {
+              "zh": "第91场胜者 vs 第92场胜者",
+              "en": "Winner Match 91 vs Winner Match 92"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "W91",
+              "W92"
+          ],
+          "stage": {
+              "zh": "1/4决赛",
+              "en": "Quarter-final"
+          }
+      },
+      {
+          "match": 100,
+          "group": "QF",
+          "date": {
+              "zh": "7月12日 周日 09:00 北京时间",
+              "en": "Jul 12 01:00 UTC"
+          },
+          "teams": {
+              "zh": "第95场胜者 vs 第96场胜者",
+              "en": "Winner Match 95 vs Winner Match 96"
+          },
+          "venue": {
+              "zh": "堪萨斯城体育场，堪萨斯城",
+              "en": "Kansas City Stadium, Kansas City"
+          },
+          "related": [
+              "W95",
+              "W96"
+          ],
+          "stage": {
+              "zh": "1/4决赛",
+              "en": "Quarter-final"
+          }
+      },
+      {
+          "match": 101,
+          "group": "SF",
+          "date": {
+              "zh": "7月15日 周三 03:00 北京时间",
+              "en": "Jul 14 19:00 UTC"
+          },
+          "teams": {
+              "zh": "第97场胜者 vs 第98场胜者",
+              "en": "Winner Match 97 vs Winner Match 98"
+          },
+          "venue": {
+              "zh": "达拉斯体育场，达拉斯",
+              "en": "Dallas Stadium, Dallas"
+          },
+          "related": [
+              "W97",
+              "W98"
+          ],
+          "stage": {
+              "zh": "半决赛",
+              "en": "Semi-final"
+          }
+      },
+      {
+          "match": 102,
+          "group": "SF",
+          "date": {
+              "zh": "7月16日 周四 03:00 北京时间",
+              "en": "Jul 15 19:00 UTC"
+          },
+          "teams": {
+              "zh": "第99场胜者 vs 第100场胜者",
+              "en": "Winner Match 99 vs Winner Match 100"
+          },
+          "venue": {
+              "zh": "亚特兰大体育场，亚特兰大",
+              "en": "Atlanta Stadium, Atlanta"
+          },
+          "related": [
+              "W99",
+              "W100"
+          ],
+          "stage": {
+              "zh": "半决赛",
+              "en": "Semi-final"
+          }
+      },
+      {
+          "match": 103,
+          "group": "3P",
+          "date": {
+              "zh": "7月19日 周日 05:00 北京时间",
+              "en": "Jul 18 21:00 UTC"
+          },
+          "teams": {
+              "zh": "第101场负者 vs 第102场负者",
+              "en": "Runner-up Match 101 vs Runner-up Match 102"
+          },
+          "venue": {
+              "zh": "迈阿密体育场，迈阿密",
+              "en": "Miami Stadium, Miami"
+          },
+          "related": [
+              "RU101",
+              "RU102"
+          ],
+          "stage": {
+              "zh": "季军赛",
+              "en": "Play-off for third place"
+          }
+      },
+      {
+          "match": 104,
+          "group": "FINAL",
+          "date": {
+              "zh": "7月20日 周一 03:00 北京时间",
+              "en": "Jul 19 19:00 UTC"
+          },
+          "teams": {
+              "zh": "第101场胜者 vs 第102场胜者",
+              "en": "Winner Match 101 vs Winner Match 102"
+          },
+          "venue": {
+              "zh": "纽约/新泽西体育场，新泽西",
+              "en": "New York/New Jersey Stadium, New Jersey"
+          },
+          "related": [
+              "W101",
+              "W102"
+          ],
+          "stage": {
+              "zh": "决赛",
+              "en": "Final"
+          }
+      }
   ],
   i18n: {
     zh: {
@@ -1187,7 +4951,7 @@ window.WORLD_CUP_CONFIG = {
       heroEyebrow:'', heroTitle:'WorldCupCoin', heroLead:'WorldCupCoin主币会产生3%的交易税，赛事结束后，WorldCupCoin主币所产生的交易税，会全部回购并烧毁夺冠队伍的子币，产生强烈的回购预期，推动球队子代币的持续交易。', heroLead2:'在48个球队子币中，每一个球队代币会产生5%的交易税。子币在赛事中被淘汰后，立马将自身所积累的交易税回购并烧毁WorldCupCoin主币。', heroContractLabel:'合约', heroStat1:'市值', heroStat2:'冠军回购池', heroStat3:'真实持有者', liveLabel:'实时演示',
       primaryCta:'前往交易', secondaryCta:'复制合约', tertiaryCta:'复制主币合约', copied:'已复制',
       storyTitle:'为什么现在要进？', story1:'世界杯赛程带来持续注意力', story2:'国家币交易产生热度和链上动作', story3:'税收 / LP / 销毁回流主币叙事', story4:'主币承接整个国家币生态入口',
-      openingBattle:'开幕战', openingTeams:'墨西哥 vs 南非 · 2026年6月11日', openingMatch:'开幕战倒计时', kickoff:'墨西哥 vs 南非 · 2026年6月11日', days:'天', hours:'小时', mins:'分钟', secs:'秒',
+      openingBattle:'开幕战', openingTeams:'墨西哥 vs 南非 · 2026年6月12日 03:00 北京时间', openingMatch:'开幕战倒计时', kickoff:'墨西哥 vs 南非 · 2026年6月12日 03:00 北京时间', days:'天', hours:'小时', mins:'分钟', secs:'秒',
       statsMarket:'主币市值', statsVolume:'24h 成交额', statsLiquidity:'流动性', statsBuyback:'24h 回购',
       mainTitle:'主币价值捕获层', mainDesc:'主币作为整个世界杯国家币生态的入口：国家币热度、赛程流量、回购机制、LP 存入和销毁记录都可以围绕主币形成叙事。', contract:'合约地址', taxMain:'主币税', taxCountry:'国家币税', tokenSlots:'球队席位', vault:'回购金库',
       marketEyebrow:'实时交易面板', marketTitle:'国家球队币 DEX 行情表', marketDesc:'更接近真实行情页：支持搜索、链筛选、热度/涨幅/成交额排序、比赛日标签、趋势标签、合约复制和交易按钮。', search:'搜索国家 / Symbol / Chain...', all:'全部', sortHeat:'热度', sortChange:'涨幅', sortVolume:'成交额', sortCap:'市值', rank:'#', token:'币种', marketCapCol:'市值', mainInflow:'为WorldCupCoin主币输血金额', price:'价格', change:'24h', volume:'成交额', liquidity:'流动性', holders:'持币', heat:'热度', tags:'标签', actions:'操作', buy:'买入', chart:'图表', copy:'复制', trending:'趋势', matchDay:'比赛日', noResults:'没有找到匹配的国家币。',
@@ -1197,7 +4961,7 @@ window.WORLD_CUP_CONFIG = {
       ledgerTitle:'链上 Ledger', ledgerDesc:'把 Claims、Burns、LP Deposits、BSC Buybacks 做成透明账本，增强项目可信度。',
       trustTitle:'可信度与上线披露', trustDesc:'Web3 用户最怕信息不透明。上线前可以把合约、税率、权限、流动性、官方链接、风险提示全部放在这里。', officialLinks:'官方链接', riskTitle:'风险提示', riskText:'本页面是独立球迷币聚合模板，不隶属于 FIFA、任何国家队、足协、交易所、Pump.fun、Flap 或 Ethereum Foundation。Meme / Fan token 风险极高，请自行研究。',
       configTitle:'后台可替换配置结构', configDesc:'源码包已经拆出配置层。正式接后端时，你只需要把 local 配置替换成 API 返回数据，前端渲染逻辑不用重写。', configFiles:'配置文件', apiRoutes:'建议 API', launchChecklist:'上线清单',
-      fixturesTitle:'赛程中心', fixturesDesc:'赛程可接 CMS 或第三方体育数据源，并和国家币符号建立关联。', group:'小组', allGroups:'全部小组', nextOnly:'只看近期', matches:'场比赛',
+      fixturesTitle:'赛程中心', fixturesDesc:'赛程可接 CMS 或第三方体育数据源，并和国家币符号建立关联。', group:'小组', allGroups:'全部赛程', nextOnly:'只看近期', matches:'场比赛',
       footer:'免责声明: 独立球迷项目。与 FIFA、任何国家足协、赛事组织方无任何关联。'
     },
     en: {
@@ -1205,7 +4969,7 @@ window.WORLD_CUP_CONFIG = {
       heroEyebrow:'', heroTitle:'WorldCupCoin', heroLead:'The WorldCupCoin main token generates a 3% trading tax. After the tournament ends, all tax generated by the main token is used to buy back and burn the champion team child token, creating strong buyback expectations and driving continued trading in team tokens.', heroLead2:'Across the 48 team child tokens, each token charges a 5% trading tax. Once a team is eliminated, its accumulated tax is immediately used to buy back and burn the WorldCupCoin main token.', heroContractLabel:'Contract', heroStat1:'Market Cap', heroStat2:'Champion Buyback Pool', heroStat3:'Real Holders', liveLabel:'Live Demo',
       primaryCta:'Trade Now', secondaryCta:'Copy Contract', tertiaryCta:'Copy Main Contract', copied:'Copied',
       storyTitle:'Why enter now?', story1:'World Cup fixtures create recurring attention', story2:'Country-token trades generate on-chain activity', story3:'Tax / LP / burns reinforce the main-token narrative', story4:'The main token becomes the gateway to the country-token ecosystem',
-      openingBattle:'Opening Match', openingTeams:'Mexico vs South Africa · Jun 11, 2026', openingMatch:'Opening Match Countdown', kickoff:'Mexico vs South Africa · Jun 11, 2026', days:'Days', hours:'Hours', mins:'Min', secs:'Sec',
+      openingBattle:'Opening Match', openingTeams:'Mexico vs South Africa · Jun 11, 2026 19:00 UTC', openingMatch:'Opening Match Countdown', kickoff:'Mexico vs South Africa · Jun 11, 2026 19:00 UTC', days:'Days', hours:'Hours', mins:'Min', secs:'Sec',
       statsMarket:'Hub Market Cap', statsVolume:'24h Volume', statsLiquidity:'Liquidity', statsBuyback:'24h Buyback',
       mainTitle:'Main-token value capture layer', mainDesc:'The main token is the entry point for the entire World Cup country-token ecosystem. Country-token heat, fixture traffic, buyback loops, LP deposits and burns can all reinforce the main-token story.', contract:'Contract Address', taxMain:'Main Tax', taxCountry:'Country Tax', tokenSlots:'Team Slots', vault:'Buyback Vault',
       marketEyebrow:'Live trading panel', marketTitle:'National Team Coin DEX Table', marketDesc:'Closer to a real trading page: search, chain filters, heat/change/volume/market-cap sorting, match-day tags, trending tags, contract copy and trade CTAs.', search:'Search country / Symbol / Chain...', all:'All', sortHeat:'Heat', sortChange:'Change', sortVolume:'Volume', sortCap:'Market Cap', rank:'#', token:'Token', marketCapCol:'Market Cap', mainInflow:'WorldCupCoin Main Inflow', price:'Price', change:'24h', volume:'Volume', liquidity:'Liquidity', holders:'Holders', heat:'Heat', tags:'Tags', actions:'Actions', buy:'Buy', chart:'Chart', copy:'Copy', trending:'Trending', matchDay:'Match day', noResults:'No matching country tokens found.',
@@ -1215,29 +4979,54 @@ window.WORLD_CUP_CONFIG = {
       ledgerTitle:'On-chain Ledger', ledgerDesc:'Transparent Claims, Burns, LP Deposits and BSC Buybacks improve user trust.',
       trustTitle:'Trust & launch disclosure', trustDesc:'Web3 users fear opacity. Put contracts, taxes, ownership, liquidity, official links and risk notices here before launch.', officialLinks:'Official links', riskTitle:'Risk notice', riskText:'This page is an independent fan-coin aggregator template. It is not affiliated with FIFA, any national team, federation, exchange, Pump.fun, Flap or Ethereum Foundation. Meme / fan tokens are highly risky. Do your own research.',
       configTitle:'Backend-replaceable config structure', configDesc:'The source package now includes a dedicated config layer. When you connect a backend, replace local config with API responses without rewriting the front-end rendering logic.', configFiles:'Config files', apiRoutes:'Suggested APIs', launchChecklist:'Launch checklist',
-      fixturesTitle:'Fixture center', fixturesDesc:'Fixtures can connect to a CMS or sports data provider and map directly to country token symbols.', group:'Group', allGroups:'All groups', nextOnly:'Next only', matches:'matches',
+      fixturesTitle:'Fixture center', fixturesDesc:'Fixtures can connect to a CMS or sports data provider and map directly to country token symbols.', group:'Group', allGroups:'All fixtures', nextOnly:'Next only', matches:'matches',
       footer:'Disclaimer: Independent fan project. Not affiliated with FIFA, any national football association, or tournament organizer.'
     }
   }
 };
+window.WORLD_CUP_CONFIG.tokens.forEach((token)=>{
+  if(token.inflow) return;
+  const volume=String(token.volume||'');
+  const value=parseFloat(volume.replace(/[$,]/g,''));
+  const usd=volume.includes('M') ? value*1000000 : volume.includes('K') ? value*1000 : value;
+  token.inflow='$'+Math.max(1, Math.round((usd||0)*0.05)).toLocaleString();
+});
 </script><script>
 (()=>{
 const cfg = window.WORLD_CUP_CONFIG;
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 let lang = localStorage.getItem('wc.lang') || cfg.site.defaultLang || 'zh';
-let chain = 'all'; let sort = 'heat'; let onlyNext=false; let walletConnected=false;
+if(!cfg.i18n[lang]) lang = cfg.site.defaultLang || 'zh';
+let chain = 'all'; let sort = 'cap'; let onlyNext=false; let walletConnected=false; let fixturesLoaded=false;
 const t=(k)=>(cfg.i18n[lang]&&cfg.i18n[lang][k]) || cfg.i18n.zh[k] || k;
 const text=(obj)=> typeof obj==='object' ? (obj[lang] || obj.en || obj.zh || '') : obj;
+const escapeHTML=(value)=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const parseMoney=(v)=>{ const n=parseFloat(String(v).replace(/[$,]/g,'')); if(String(v).includes('M')) return n*1e6; if(String(v).includes('K')) return n*1e3; return n||0; };
+const openingDate=()=>new Date(cfg.site.openingKickoffUtc);
+function dateParts(date,timeZone){
+  return new Intl.DateTimeFormat('en-US',{timeZone,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(date).reduce((acc,p)=>{acc[p.type]=p.value;return acc;},{});
+}
+function openingTimeLabel(){
+  const date=openingDate();
+  if(lang==='zh'){
+    const p=dateParts(date,'Asia/Shanghai');
+    return `${p.year}年${Number(p.month)}月${Number(p.day)}日 ${p.hour}:${p.minute} 北京时间`;
+  }
+  const p=dateParts(date,'UTC');
+  const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${months[Number(p.month)-1]} ${Number(p.day)}, ${p.year} ${p.hour}:${p.minute} UTC`;
+}
+function renderOpeningTime(){
+  const el=$('[data-i18n="openingTeams"]'); if(!el) return;
+  el.textContent=lang==='zh'?`墨西哥 vs 南非 · ${openingTimeLabel()}`:`Mexico vs South Africa · ${openingTimeLabel()}`;
+}
 function applyI18n(){
   document.documentElement.lang=lang==='zh'?'zh-CN':'en';
   document.title=lang==='zh'?'WorldCupCoin — 国家球队币':'WorldCupCoin — National Team Coins';
   const md=document.querySelector('meta[name="description"]');
   if(md) md.setAttribute('content', lang==='zh'?'WorldCupCoin 国家球队币交易与赛程中心。':'WorldCupCoin national team coin trading and fixtures hub.');
-  $$('[data-i18n]').forEach(el=>{
-    const key=el.dataset.i18n;
-    el.textContent=t(key);
-  });
+  $$('[data-i18n]').forEach(el=>{ el.textContent=t(el.dataset.i18n); });
+  renderOpeningTime();
   const langBtn=$('#langBtn'); if(langBtn) langBtn.textContent=t('langButton');
   const searchInput=$('#searchInput'); if(searchInput) searchInput.placeholder=t('search');
   const toast=$('#toast'); if(toast) toast.textContent=t('copied');
@@ -1249,27 +5038,95 @@ function applyI18n(){
   setText('#chainTabs [data-chain="all"]',t('all'));
   $$('[data-social]').forEach(el=>{ const url=cfg.site.links?.[el.dataset.social]; if(url) el.href=url; });
 }
-function copy(v){navigator.clipboard?.writeText(v).catch(()=>{}); const toast=$('#toast'); toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),1500)}
+function fallbackCopy(v){
+  const ta=document.createElement('textarea');
+  ta.value=v; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.left='-9999px';
+  document.body.appendChild(ta); ta.select();
+  try{document.execCommand('copy')}catch(e){}
+  document.body.removeChild(ta);
+}
+function copy(v){
+  const value=String(v||'');
+  if(navigator.clipboard?.writeText) navigator.clipboard.writeText(value).catch(()=>fallbackCopy(value));
+  else fallbackCopy(value);
+  const toast=$('#toast'); if(!toast) return; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),1500)
+}
 function metric(label,val){return `<div class="metric"><span>${label}</span><strong>${val}</strong></div>`}
-function renderHero(){ const s=cfg.site.stats; const heroMetrics=$('#heroMetrics'); if(heroMetrics) heroMetrics.innerHTML=[metric(t('statsMarket'),s.marketCap),metric(t('statsVolume'),s.volume24h),metric(t('statsLiquidity'),s.liquidity),metric(t('statsBuyback'),s.buyback24h)].join(''); const storyStrip=$('#storyStrip'); if(storyStrip) storyStrip.innerHTML=[1,2,3,4].map(i=>`<div class=\"story-card\"><b>0${i}</b>${t('story'+i)}</div>`).join(''); const heroContract=$('#heroContract'); if(heroContract) heroContract.textContent=cfg.site.contract; const mainContract=$('#mainContract'); if(mainContract) mainContract.textContent=cfg.site.contract; const mainMini=$('#mainMini'); if(mainMini) mainMini.innerHTML=`<div><b>3%</b><span>${t('taxMain')}</span></div><div><b>5%</b><span>${t('taxCountry')}</span></div><div><b>48</b><span>${t('tokenSlots')}</span></div><div><b>${cfg.site.stats.vault}</b><span>${t('vault')}</span></div>`; }</b>${t('story'+i)}</div>`).join(''); $('#mainContract').textContent=cfg.site.contract; $('#mainMini').innerHTML=`<div><b>3%</b><span>${t('taxMain')}</span></div><div><b>5%</b><span>${t('taxCountry')}</span></div><div><b>48</b><span>${t('tokenSlots')}</span></div><div><b>${cfg.site.stats.vault}</b><span>${t('vault')}</span></div>`; }
+function renderHero(){
+  const s=cfg.site.stats;
+  const heroMetrics=$('#heroMetrics');
+  if(heroMetrics) heroMetrics.innerHTML=[metric(t('statsMarket'),s.marketCap),metric(t('statsVolume'),s.volume24h),metric(t('statsLiquidity'),s.liquidity),metric(t('statsBuyback'),s.buyback24h)].join('');
+  const storyStrip=$('#storyStrip');
+  if(storyStrip) storyStrip.innerHTML=[1,2,3,4].map(i=>`<div class="story-card"><b>0${i}</b>${t('story'+i)}</div>`).join('');
+  const heroContract=$('#heroContract'); if(heroContract) heroContract.textContent=cfg.site.contract;
+  const mainContract=$('#mainContract'); if(mainContract) mainContract.textContent=cfg.site.contract;
+  const mainMini=$('#mainMini');
+  if(mainMini) mainMini.innerHTML=`<div><b>3%</b><span>${t('taxMain')}</span></div><div><b>5%</b><span>${t('taxCountry')}</span></div><div><b>48</b><span>${t('tokenSlots')}</span></div><div><b>${cfg.site.stats.vault}</b><span>${t('vault')}</span></div>`;
+}
 function spark(arr){ return `<div class="spark">${arr.map(v=>`<i style="height:${Math.max(12,v)}%"></i>`).join('')}</div>` }
-function renderMarket(){ let q=$('#searchInput').value.trim().toLowerCase(); let data=cfg.tokens.filter(x=>(chain==='all'||x.chain===chain) && [text(x.country),x.symbol,x.chain,x.contract].some(v=>String(v).toLowerCase().includes(q))); data.sort((a,b)=> sort==='change24h'?b.change24h-a.change24h:sort==='volume'?parseMoney(b.volume)-parseMoney(a.volume):sort==='cap'?parseMoney(b.cap)-parseMoney(a.cap):b.heat-a.heat); $('#marketRows').innerHTML=data.map((x,i)=>`<tr><td class="col-rank"><span class="rank-pill">${i+1}</span></td><td class="col-token"><div class="token-cell"><span class="flag"><img src="${cfg.site.logo}" alt="${x.symbol} logo"></span><div><b>${text(x.country)}</b><span>$${x.symbol}</span></div></div></td><td class="col-cap metric-cell">${x.cap}</td><td class="col-price metric-cell">${x.price}</td><td class="col-change metric-cell ${x.change24h>=0?'up':'down'}">${x.change24h>=0?'+':''}${x.change24h}%</td><td class="col-volume metric-cell">${x.volume}</td><td class="col-liquidity metric-cell">${x.liquidity}</td><td class="col-holders metric-cell">${x.holders}</td><td class="col-inflow"><span class="inflow-badge">${x.inflow || ('$'+Math.max(1, Math.round(parseMoney(x.volume)*0.05)).toLocaleString())}</span></td><td class="col-ca"><button class="ca-btn" data-copy="${x.contract}" title="${x.contract}">${x.contract.slice(0,6)}...${x.contract.slice(-4)}</button></td></tr>`).join('')||`<tr><td colspan="10" style="text-align:center;color:var(--muted);padding:28px">${t('noResults')}</td></tr>`; if($('#leaderGrid')) renderLeaders(data.length?data:cfg.tokens); }
-function renderCatalysts(){ $('#catalystGrid').innerHTML=cfg.catalysts.map(c=>`<article class="card catalyst"><small>${c.time}</small><h3>${text(c.fixture)}</h3><div class="pill-row"><span class="pill">${t('related')}: ${c.related.join(' / ')}</span><span class="pill">Vol ${c.volume}</span><span class="pill">Holders ${c.holders}</span></div><p><b>${t('signal')}:</b> ${text(c.signal)}</p><button class="btn gold">${text(c.action)}</button></article>`).join('') }
-function renderWallet(){ const w=cfg.site.walletDemo; $('#walletPanel').innerHTML=`<div class="wallet-top"><div><h2>${t('walletTitle')}</h2><p>${t('walletDesc')}</p></div><span class="wallet-address">${walletConnected?w.address:'0x••••...••••'}</span></div><div class="wallet-stats"><div><span>${t('totalValue')}</span><b>${walletConnected?w.totalValue:'--'}</b></div><div><span>${t('estPnl')}</span><b class="up">${walletConnected?w.pnl:'--'}</b></div><div><span>${t('claimable')}</span><b>${walletConnected?w.claimable:'--'}</b></div></div><h3>${t('myHoldings')}</h3><div class="holdings">${(walletConnected?w.holdings:[]).map(h=>`<div class="holding"><b>$${h.symbol}<span>${h.amount}</span></b><strong>${h.value}</strong></div>`).join('') || `<div class="holding"><b>${t('connectWallet')}</b><span>Demo UI</span></div>`}</div><div class="inline-actions"><button class="btn primary" id="walletInside">${walletConnected?t('disconnect'):t('connectWallet')}</button><button class="btn gold" data-referral="${w.referral}">${t('copyReferral')}</button></div>`; }
-function renderLeaders(){ const tokens=[...cfg.tokens]; const top=[...tokens].sort((a,b)=>b.change24h-a.change24h).slice(0,3); const traded=[...tokens].sort((a,b)=>parseMoney(b.volume)-parseMoney(a.volume)).slice(0,3); const hot=[...tokens].filter(x=>x.matchDay).sort((a,b)=>b.heat-a.heat).slice(0,3); const fans=[...tokens].sort((a,b)=>parseInt(String(b.holders).replace(/,/g,''))-parseInt(String(a.holders).replace(/,/g,''))).slice(0,3); const groups=[['topGainers',top,x=>`${x.change24h>=0?'+':''}${x.change24h}%`],['mostTraded',traded,x=>x.volume],['matchHot',hot,x=>x.heat],['fanScore',fans,x=>x.holders]]; $('#leaderGrid').innerHTML=groups.map(g=>`<div class="leader"><h3>${t(g[0])}</h3>${g[1].map((x,i)=>`<div class="leader-row"><b><img class="leader-logo" src="${cfg.site.logo}" alt="${x.symbol} logo">${i+1}. ${x.symbol}</b><span>${g[2](x)}</span></div>`).join('')}</div>`).join(''); }
-function renderLedger(){ $('#ledgerGrid').innerHTML=cfg.ledger.map(l=>`<article class="card ledger-card"><h3>${text(l.title)}</h3>${l.rows.map(r=>`<div class="ledger-item"><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')}</article>`).join('') }
-function renderTrust(){ $('#trustGrid').innerHTML=cfg.site.security.map(x=>`<article class="card trust-card"><small>${x.status}</small><h3>${text(x)}</h3><b>${x.status}</b></article>`).join('') }
-function setupGroups(){ const select=$('#groupSelect'); if(!select) return; const selected=select.value||'all'; const groups=[...new Set(cfg.fixtures.map(f=>f.group))]; select.innerHTML=`<option value="all">${t('allGroups')}</option>`+groups.map(g=>`<option value="${g}">${t('group')} ${g}</option>`).join(''); select.value=groups.includes(selected)?selected:'all'; }
-function renderFixtures(){ const select=$('#groupSelect'); const list=$('#fixtureList'); if(!select || !list) return; const selected=select.value; let data=cfg.fixtures.filter(f=>selected==='all'||f.group===selected); if(onlyNext)data=data.slice(0,6); list.innerHTML=data.map(f=>`<div class="fixture"><span>${t('group')} ${f.group}</span><b>${text(f.teams)}</b><span>${text(f.venue)}</span><span>${text(f.date)} · ${f.related.join('/')}</span></div>`).join('') } ${f.group}</span><b>${text(f.teams)}</b><span>${text(f.venue)}</span><span>${text(f.date)} · ${f.related.join('/')}</span></div>`).join('') }
-function countdown(){ const diff=Math.max(0,new Date(cfg.site.openingKickoffUtc)-Date.now()); const vals=[Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)].map(v=>String(v).padStart(2,'0')); $$('#countdown strong').forEach((el,i)=>el.textContent=vals[i]); }
-function renderAll(){ applyI18n(); renderHero(); renderMarket(); if($('#catalystGrid')) renderCatalysts(); if($('#walletPanel')) renderWallet(); if($('#leaderGrid')) renderLeaders(); if($('#ledgerGrid')) renderLedger(); if($('#trustGrid')) renderTrust(); if($('#groupSelect') && $('#fixtureList')){ setupGroups(); renderFixtures(); } countdown(); }
-document.addEventListener('click',e=>{ const a=e.target.closest('[data-address]'); if(a) copy(a.dataset.address); const c=e.target.closest('[data-copy]'); if(c){ const v=c.dataset.copy||''; const target=v.startsWith('#')?$(v):null; copy(target?target.textContent:v); } if(e.target.closest('[data-copy-main]')) copy(cfg.site.contract); const r=e.target.closest('[data-referral]'); if(r) copy(r.dataset.referral); if(e.target.closest('#walletBtn,#walletInside')){walletConnected=!walletConnected; $('#walletBtn').textContent=walletConnected?t('disconnect'):t('connectWallet'); if($('#walletPanel')) renderWallet();} });
+function renderMarket(){
+  const input=$('#searchInput'), rows=$('#marketRows'); if(!input || !rows) return;
+  let q=input.value.trim().toLowerCase();
+  let data=cfg.tokens.filter(x=>(chain==='all'||x.chain===chain) && [text(x.country),x.symbol,x.chain,x.contract].some(v=>String(v).toLowerCase().includes(q)));
+  data.sort((a,b)=> sort==='change24h'?b.change24h-a.change24h:sort==='volume'?parseMoney(b.volume)-parseMoney(a.volume):sort==='cap'?parseMoney(b.cap)-parseMoney(a.cap):b.heat-a.heat);
+  rows.innerHTML=data.map((x,i)=>`<tr><td class="col-rank"><span class="rank-pill">${i+1}</span></td><td class="col-token"><div class="token-cell"><span class="flag"><img src="${x.flagUrl || cfg.site.logo}" alt="${text(x.country)} flag" loading="lazy"></span><div><b>${text(x.country)}</b><span>$${x.symbol}</span></div></div></td><td class="col-cap metric-cell">${x.cap}</td><td class="col-price metric-cell">${x.price}</td><td class="col-change metric-cell ${x.change24h>=0?'up':'down'}">${x.change24h>=0?'+':''}${x.change24h}%</td><td class="col-volume metric-cell">${x.volume}</td><td class="col-liquidity metric-cell">${x.liquidity}</td><td class="col-holders metric-cell">${x.holders}</td><td class="col-inflow"><span class="inflow-badge">${x.inflow || ('$'+Math.max(1, Math.round(parseMoney(x.volume)*0.05)).toLocaleString())}</span></td><td class="col-ca"><button class="ca-btn" data-copy="${x.contract}" title="${x.contract}">${x.contract.slice(0,6)}...${x.contract.slice(-4)}</button></td></tr>`).join('')||`<tr><td colspan="10" style="text-align:center;color:var(--muted);padding:28px">${t('noResults')}</td></tr>`;
+  if($('#leaderGrid')) renderLeaders();
+}
+function renderCatalysts(){ const grid=$('#catalystGrid'); if(!grid) return; grid.innerHTML=cfg.catalysts.map(c=>`<article class="card catalyst"><small>${c.time}</small><h3>${text(c.fixture)}</h3><div class="pill-row"><span class="pill">${t('related')}: ${c.related.join(' / ')}</span><span class="pill">Vol ${c.volume}</span><span class="pill">Holders ${c.holders}</span></div><p><b>${t('signal')}:</b> ${text(c.signal)}</p><button class="btn gold">${text(c.action)}</button></article>`).join('') }
+function renderWallet(){ const panel=$('#walletPanel'); if(!panel) return; const w=cfg.site.walletDemo; panel.innerHTML=`<div class="wallet-top"><div><h2>${t('walletTitle')}</h2><p>${t('walletDesc')}</p></div><span class="wallet-address">${walletConnected?w.address:'0x••••...••••'}</span></div><div class="wallet-stats"><div><span>${t('totalValue')}</span><b>${walletConnected?w.totalValue:'--'}</b></div><div><span>${t('estPnl')}</span><b class="up">${walletConnected?w.pnl:'--'}</b></div><div><span>${t('claimable')}</span><b>${walletConnected?w.claimable:'--'}</b></div></div><h3>${t('myHoldings')}</h3><div class="holdings">${(walletConnected?w.holdings:[]).map(h=>`<div class="holding"><b>$${h.symbol}<span>${h.amount}</span></b><strong>${h.value}</strong></div>`).join('') || `<div class="holding"><b>${t('connectWallet')}</b><span>Demo UI</span></div>`}</div><div class="inline-actions"><button class="btn primary" id="walletInside">${walletConnected?t('disconnect'):t('connectWallet')}</button><button class="btn gold" data-referral="${w.referral}">${t('copyReferral')}</button></div>`; }
+function renderLeaders(){ const grid=$('#leaderGrid'); if(!grid) return; const tokens=[...cfg.tokens]; const top=[...tokens].sort((a,b)=>b.change24h-a.change24h).slice(0,3); const traded=[...tokens].sort((a,b)=>parseMoney(b.volume)-parseMoney(a.volume)).slice(0,3); const hot=[...tokens].filter(x=>x.matchDay).sort((a,b)=>b.heat-a.heat).slice(0,3); const fans=[...tokens].sort((a,b)=>parseInt(String(b.holders).replace(/,/g,''))-parseInt(String(a.holders).replace(/,/g,''))).slice(0,3); const groups=[['topGainers',top,x=>`${x.change24h>=0?'+':''}${x.change24h}%`],['mostTraded',traded,x=>x.volume],['matchHot',hot,x=>x.heat],['fanScore',fans,x=>x.holders]]; grid.innerHTML=groups.map(g=>`<div class="leader"><h3>${t(g[0])}</h3>${g[1].map((x,i)=>`<div class="leader-row"><b><img class="leader-logo" src="${x.flagUrl || cfg.site.logo}" alt="${text(x.country)} flag">${i+1}. ${x.symbol}</b><span>${g[2](x)}</span></div>`).join('')}</div>`).join(''); }
+function renderLedger(){ const grid=$('#ledgerGrid'); if(!grid) return; grid.innerHTML=cfg.ledger.map(l=>`<article class="card ledger-card"><h3>${text(l.title)}</h3>${l.rows.map(r=>`<div class="ledger-item"><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')}</article>`).join('') }
+function renderTrust(){ const grid=$('#trustGrid'); if(!grid) return; grid.innerHTML=cfg.site.security.map(x=>`<article class="card trust-card"><small>${x.status}</small><h3>${text(x)}</h3><b>${x.status}</b></article>`).join('') }
+function fixtureLabel(f){ return f.stage ? text(f.stage) : `${t('group')} ${f.group}`; }
+function setupGroups(){
+  const select=$('#groupSelect'); if(!select) return;
+  const selected=select.value||'all';
+  const groups=new Map(); cfg.fixtures.forEach(f=>{ if(!groups.has(f.group)) groups.set(f.group, fixtureLabel(f)); });
+  const order=['A','B','C','D','E','F','G','H','I','J','K','L','R32','R16','QF','SF','3P','FINAL'];
+  const entries=Array.from(groups).sort((a,b)=>order.indexOf(a[0])-order.indexOf(b[0]));
+  select.innerHTML=`<option value="all">${escapeHTML(t('allGroups'))}</option>`+entries.map(([key,label])=>`<option value="${escapeHTML(key)}">${escapeHTML(label)}</option>`).join('');
+  select.value=groups.has(selected)?selected:'all';
+}
+function renderFixtures(){
+  const select=$('#groupSelect'); const list=$('#fixtureList'); if(!select || !list) return;
+  const selected=select.value; let data=cfg.fixtures.filter(f=>selected==='all'||f.group===selected); if(onlyNext)data=data.slice(0,6);
+  list.innerHTML=data.map(f=>`<div class="fixture"><span>${escapeHTML(fixtureLabel(f))}</span><b>${escapeHTML(text(f.teams))}</b><span>${escapeHTML(text(f.venue))}</span><span>${escapeHTML(text(f.date))} &middot; ${escapeHTML((Array.isArray(f.related)?f.related:[]).join('/'))}</span></div>`).join('');
+}
+async function loadFixtures(){
+  if(!$('#groupSelect') || !$('#fixtureList')) return;
+  fixturesLoaded=true;
+  setupGroups();
+  renderFixtures();
+  let timer;
+  try{
+    const controller=new AbortController();
+    timer=setTimeout(()=>controller.abort(),8000);
+    const res=await fetch('/api/fixtures',{cache:'no-store',signal:controller.signal});
+    if(!res.ok) throw new Error('fixtures_api_unavailable');
+    const data=await res.json();
+    if(data && data.ok && Array.isArray(data.fixtures) && data.fixtures.length){
+      cfg.fixtures=data.fixtures;
+      setupGroups();
+      renderFixtures();
+    }
+  }catch(error){
+    console.warn('Use local fixtures fallback');
+  }finally{
+    if(timer) clearTimeout(timer);
+  }
+}
+function countdown(){ const diff=Math.max(0,openingDate().getTime()-Date.now()); const vals=[Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)].map(v=>String(v).padStart(2,'0')); $$('#countdown strong').forEach((el,i)=>el.textContent=vals[i]); }
+function renderAll(){ applyI18n(); renderHero(); renderMarket(); renderCatalysts(); renderWallet(); renderLeaders(); renderLedger(); renderTrust(); if(fixturesLoaded && $('#groupSelect') && $('#fixtureList')){ setupGroups(); renderFixtures(); } countdown(); }
+document.addEventListener('click',e=>{ const a=e.target.closest('[data-address]'); if(a) copy(a.dataset.address); const c=e.target.closest('[data-copy]'); if(c){ const v=c.dataset.copy||''; const target=v.startsWith('#')?$(v):null; copy(target?target.textContent:v); } if(e.target.closest('[data-copy-main]')) copy(cfg.site.contract); const r=e.target.closest('[data-referral]'); if(r) copy(r.dataset.referral); if(e.target.closest('#walletBtn,#walletInside')){walletConnected=!walletConnected; const btn=$('#walletBtn'); if(btn) btn.textContent=walletConnected?t('disconnect'):t('connectWallet'); renderWallet();} });
 const langBtn=$('#langBtn'); if(langBtn) langBtn.addEventListener('click',()=>{ lang=lang==='zh'?'en':'zh'; localStorage.setItem('wc.lang',lang); renderAll(); });
-if($('#searchInput')) $('#searchInput').addEventListener('input',renderMarket); if($('#groupSelect')) $('#groupSelect').addEventListener('change',renderFixtures); if($('#nextOnly')) $('#nextOnly').addEventListener('click',e=>{onlyNext=!onlyNext;e.currentTarget.classList.toggle('active',onlyNext);renderFixtures();});
-if($('#chainTabs')) $('#chainTabs').addEventListener('click',e=>{const b=e.target.closest('button'); if(!b)return; $$('#chainTabs button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); chain=b.dataset.chain; renderMarket();});
-if($('#sortTabs')) $('#sortTabs').addEventListener('click',e=>{const b=e.target.closest('button'); if(!b)return; $$('#sortTabs button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); sort=b.dataset.sort; renderMarket();});
+const searchInput=$('#searchInput'); if(searchInput) searchInput.addEventListener('input',renderMarket);
+const groupSelect=$('#groupSelect'); if(groupSelect) groupSelect.addEventListener('change',renderFixtures);
+const nextOnly=$('#nextOnly'); if(nextOnly) nextOnly.addEventListener('click',e=>{onlyNext=!onlyNext;e.currentTarget.classList.toggle('active',onlyNext);renderFixtures();});
+const chainTabs=$('#chainTabs'); if(chainTabs) chainTabs.addEventListener('click',e=>{const b=e.target.closest('button'); if(!b)return; $$('#chainTabs button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); chain=b.dataset.chain; renderMarket();});
+const sortTabs=$('#sortTabs'); if(sortTabs) sortTabs.addEventListener('click',e=>{const b=e.target.closest('button'); if(!b)return; $$('#sortTabs button').forEach(x=>x.classList.remove('active')); b.classList.add('active'); sort=b.dataset.sort; renderMarket();});
 document.addEventListener('click',e=>{const ca=e.target.closest('.ca-btn'); if(ca){copy(ca.dataset.copy);}});
-window.setWorldCupCoinLang=(next)=>{ if(next==='zh'||next==='en'){ lang=next; localStorage.setItem('wc.lang',lang); renderAll(); } }; renderAll(); setInterval(countdown,1000);
+window.setWorldCupCoinLang=(next)=>{ if(next==='zh'||next==='en'){ lang=next; localStorage.setItem('wc.lang',lang); renderAll(); } };
+renderAll(); loadFixtures(); setInterval(countdown,1000);
 })();
 </script>
 </body>
