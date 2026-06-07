@@ -1164,18 +1164,22 @@ window.WORLD_CUP_CONFIG = {
     { type:'buyback', title:{zh:'BSC 回购',en:'BSC Buybacks'}, rows:[['286.19 BNB vault','Live'],['3% main tax','Champion buyback'],['5% team tax','Main token support'],['48 team slots','Gradual launch']] }
   ],
   fixtures: [
-    { group:'A', date:{zh:'6月12日 周五',en:'Jun 12 Fri'}, teams:{zh:'墨西哥 vs 南非',en:'Mexico vs South Africa'}, venue:{zh:'阿兹特克体育场，墨西哥城',en:'Estadio Azteca, Mexico City'}, related:['MEX','RSA'] },
-    { group:'A', date:{zh:'6月12日 周五',en:'Jun 12 Fri'}, teams:{zh:'韩国 vs 捷克',en:'South Korea vs Czechia'}, venue:{zh:'阿克伦体育场，萨波潘',en:'Estadio Akron, Zapopan'}, related:['KOR','CZE'] },
-    { group:'B', date:{zh:'6月13日 周六',en:'Jun 13 Sat'}, teams:{zh:'加拿大 vs 波黑',en:'Canada vs Bosnia and Herzegovina'}, venue:{zh:'BMO 球场，多伦多',en:'BMO Field, Toronto'}, related:['CAN','BIH'] },
-    { group:'C', date:{zh:'6月14日 周日',en:'Jun 14 Sun'}, teams:{zh:'巴西 vs 摩洛哥',en:'Brazil vs Morocco'}, venue:{zh:'大都会人寿体育场，东卢瑟福',en:'MetLife Stadium, East Rutherford'}, related:['BRA','MAR'] },
-    { group:'D', date:{zh:'6月13日 周六',en:'Jun 13 Sat'}, teams:{zh:'美国 vs 巴拉圭',en:'United States vs Paraguay'}, venue:{zh:'SoFi 体育场，英格尔伍德',en:'SoFi Stadium, Inglewood'}, related:['USA','PAR'] },
-    { group:'E', date:{zh:'6月15日 周一',en:'Jun 15 Mon'}, teams:{zh:'德国 vs 库拉索',en:'Germany vs Curaçao'}, venue:{zh:'NRG 体育场，休斯敦',en:'NRG Stadium, Houston'}, related:['GER','CUW'] },
-    { group:'F', date:{zh:'6月15日 周一',en:'Jun 15 Mon'}, teams:{zh:'荷兰 vs 日本',en:'Netherlands vs Japan'}, venue:{zh:'AT&T 体育场，阿灵顿',en:'AT&T Stadium, Arlington'}, related:['NED','JPN'] },
-    { group:'H', date:{zh:'6月16日 周二',en:'Jun 16 Tue'}, teams:{zh:'西班牙 vs 佛得角',en:'Spain vs Cape Verde'}, venue:{zh:'梅赛德斯-奔驰体育场，亚特兰大',en:'Mercedes-Benz Stadium, Atlanta'}, related:['ESP','CPV'] },
-    { group:'I', date:{zh:'6月17日 周三',en:'Jun 17 Wed'}, teams:{zh:'法国 vs 塞内加尔',en:'France vs Senegal'}, venue:{zh:'大都会人寿体育场，东卢瑟福',en:'MetLife Stadium, East Rutherford'}, related:['FRA','SEN'] },
-    { group:'J', date:{zh:'6月17日 周三',en:'Jun 17 Wed'}, teams:{zh:'阿根廷 vs 阿尔及利亚',en:'Argentina vs Algeria'}, venue:{zh:'箭头体育场，堪萨斯城',en:'Arrowhead Stadium, Kansas City'}, related:['ARG','ALG'] },
-    { group:'K', date:{zh:'6月18日 周四',en:'Jun 18 Thu'}, teams:{zh:'葡萄牙 vs 刚果（金）',en:'Portugal vs DR Congo'}, venue:{zh:'NRG 体育场，休斯敦',en:'NRG Stadium, Houston'}, related:['POR','COD'] },
-    { group:'L', date:{zh:'6月18日 周四',en:'Jun 18 Thu'}, teams:{zh:'英格兰 vs 克罗地亚',en:'England vs Croatia'}, venue:{zh:'AT&T 体育场，阿灵顿',en:'AT&T Stadium, Arlington'}, related:['ENG','CRO'] }
+    // Real group stage schedule for Groups A and B (2026 World Cup)
+    // Group A – Mexico, South Africa, Korea Republic, Czechia
+    { group:'A', date:{ zh:'6月11日 周四', en:'Jun 11 Thu' }, teams:{ zh:'墨西哥 vs 南非', en:'Mexico vs South Africa' }, venue:{ zh:'阿兹特克体育场，墨西哥城', en:'Estadio Azteca, Mexico City' }, related:['MEX','RSA'] },
+    { group:'A', date:{ zh:'6月11日 周四', en:'Jun 11 Thu' }, teams:{ zh:'韩国 vs 捷克', en:'Korea Republic vs Czechia' }, venue:{ zh:'阿克伦体育场，瓜达拉哈拉', en:'Estadio Akron, Guadalajara' }, related:['KOR','CZE'] },
+    { group:'A', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'捷克 vs 南非', en:'Czechia vs South Africa' }, venue:{ zh:'梅赛德斯-奔驰体育场，亚特兰大', en:'Mercedes-Benz Stadium, Atlanta' }, related:['CZE','RSA'] },
+    { group:'A', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'墨西哥 vs 韩国', en:'Mexico vs Korea Republic' }, venue:{ zh:'阿克伦体育场，瓜达拉哈拉', en:'Estadio Akron, Guadalajara' }, related:['MEX','KOR'] },
+    { group:'A', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'捷克 vs 墨西哥', en:'Czechia vs Mexico' }, venue:{ zh:'阿兹特克体育场，墨西哥城', en:'Estadio Azteca, Mexico City' }, related:['CZE','MEX'] },
+    { group:'A', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'南非 vs 韩国', en:'South Africa vs Korea Republic' }, venue:{ zh:'BBVA 体育场，蒙特雷', en:'Estadio BBVA, Monterrey' }, related:['RSA','KOR'] },
+
+    // Group B – Canada, Bosnia and Herzegovina, Qatar, Switzerland
+    { group:'B', date:{ zh:'6月12日 周五', en:'Jun 12 Fri' }, teams:{ zh:'加拿大 vs 波黑', en:'Canada vs Bosnia and Herzegovina' }, venue:{ zh:'BMO 球场，多伦多', en:'BMO Field, Toronto' }, related:['CAN','BIH'] },
+    { group:'B', date:{ zh:'6月13日 周六', en:'Jun 13 Sat' }, teams:{ zh:'卡塔尔 vs 瑞士', en:'Qatar vs Switzerland' }, venue:{ zh:'利维斯体育场，圣克拉拉', en:'Levi\'s Stadium, Santa Clara' }, related:['QAT','SUI'] },
+    { group:'B', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'瑞士 vs 波黑', en:'Switzerland vs Bosnia and Herzegovina' }, venue:{ zh:'SoFi 体育场，英格尔伍德', en:'SoFi Stadium, Inglewood' }, related:['SUI','BIH'] },
+    { group:'B', date:{ zh:'6月18日 周四', en:'Jun 18 Thu' }, teams:{ zh:'加拿大 vs 卡塔尔', en:'Canada vs Qatar' }, venue:{ zh:'BC 场馆，温哥华', en:'BC Place, Vancouver' }, related:['CAN','QAT'] },
+    { group:'B', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'瑞士 vs 加拿大', en:'Switzerland vs Canada' }, venue:{ zh:'BC 场馆，温哥华', en:'BC Place, Vancouver' }, related:['SUI','CAN'] },
+    { group:'B', date:{ zh:'6月24日 周三', en:'Jun 24 Wed' }, teams:{ zh:'波黑 vs 卡塔尔', en:'Bosnia and Herzegovina vs Qatar' }, venue:{ zh:'流明球场，西雅图', en:'Lumen Field, Seattle' }, related:['BIH','QAT'] }
   ],
   i18n: {
     zh: {
